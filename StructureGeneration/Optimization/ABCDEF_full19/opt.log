@@ -1,0 +1,1570 @@
+
+_____/\\\________/\\\___/\\\\\\\\\______/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\______
+_____\///\\\____/\\\/__/\\\\\\\\\\\\\___\ \\\///////////__\ \\\///////////______
+________\///\\\/\\\/___/\\\/////////\\\__\ \\\_____________\ \\\________________
+___________\///\\\/____\ \\\_______\ \\\__\ \\\\\\\\\\\_____\ \\\\\\\\\\\_______
+______________\ \\\_____\ \\\\\\\\\\\\\\\__\ \\\///////______\ \\\///////_______
+_______________\ \\\_____\ \\\/////////\\\__\ \\\_____________\ \\\_____________
+________________\ \\\_____\ \\\_______\ \\\__\ \\\_____________\ \\\____________
+_________________\ \\\_____\ \\\_______\ \\\__\ \\\_____________\ \\\___________
+__________________\///______\///________\///___\///______________\///___________
+
+                  Welcome to Yaff 1.6.0 - Yet another force field
+
+                                   Written by
+      Toon Verstraelen(1)*, Louis Vanduyfhuys(1) and Steven Vandenbrande(1)
+
+(1) Center for Molecular Modeling, Ghent University Belgium.
+* mailto: Toon.Verstraelen@UGent.be
+
+In a not-too-distant future, this program will be renamed to NINJAFF, which
+stands for 'NINJAFF is not just another force field code'. Please, bear with us.
+
+
+    ENV User:           vsc42354
+    ENV Platform:       Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-redhat-8.
+    ENV                 8-Ootpa
+    ENV Time:           2024-03-14T10:59:10.267923
+    ENV Python version: 3.7.4 (default, Sep 11 2020, 18:31:13) [GCC 8.3.0]
+    ENV YAFF version:   1.6.0
+    ENV Current Dir:    /kyukon/data/gent/vo/000/gvo00003/vsc42354/PhD/Projects/
+    ENV                 GeometryConstructions/Rasha/Output/PA_TP/Inclination/out
+    ENV                 put/12layers/ABCDEF_full19
+    ENV Command line:   opt.py
+
+  UNITS The following units will be used below:
+  UNITS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  UNITS Kind          Conversion               Format Notation
+  UNITS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  UNITS        energy 3.808799176039228e-04    %10.1f kJ/mol
+  UNITS   temperature 1.000000000000000e+00    %10.1f K
+  UNITS        length 1.889726133921252e+00    %10.4f A
+  UNITS     invlength 5.291772082999999e-01    %10.5f A^-1
+  UNITS          area 3.571064861224962e+00    %10.3f A^2
+  UNITS        volume 6.748334594184680e+00    %10.3f A^3
+  UNITS          time 4.134137333664683e+01    %10.1f fs
+  UNITS          mass 1.822888627353289e+03    %10.5f amu
+  UNITS        charge 1.000000000000000e+00    %10.5f e
+  UNITS         force 2.015529714951779e-04    %10.1f kJ/mol/A
+  UNITS    forceconst 1.066572387803877e-04    %10.1f kJ/mol/A**2
+  UNITS      velocity 4.571028926719556e-02    %10.5f A/fs
+  UNITS  acceleration 1.105679022682005e-03    %10.5f A/fs**2
+  UNITS         angle 1.745329251994330e-02    %10.5f deg
+  UNITS            c6 1.000000000000000e+00    %10.5f E_h*a_0**6
+  UNITS            c8 1.000000000000000e+00    %10.5f E_h*a_0**6
+  UNITS           c12 1.000000000000000e+00    %10.5f E_h*a_0**12
+  UNITS     diffconst 8.637992821731958e-05    %10.5f A**2/ps
+  UNITS       density 1.626726283270276e+02    %10.3f g/cm^3
+  UNITS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  UNITS The internal data is divided by the corresponding conversion factor
+  UNITS before it gets printed on screen.
+
+    SYS Unit cell
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS Number of periodic dimensions: 3
+    SYS Cell parameter     a:    45.3271
+    SYS Cell parameter     b:    45.3271
+    SYS Cell parameter     c:    36.0000
+    SYS Cell parameter alpha:   90.00000
+    SYS Cell parameter  beta:   90.00000
+    SYS Cell parameter gamma:  120.00000
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    SYS Analysis of the bonds:
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS  First   Second   Count
+    SYS      1        6     921
+    SYS      1        7     231
+    SYS      6        6    1728
+    SYS      6        7     576
+    SYS      6        8     231
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    SYS Analysis of the neighbors:
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS Number of first neighbors:    3687
+    SYS Number of second neighbors:   5934
+    SYS Number of third neighbors:    8268
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS Element   Neighboring elements   Count
+    SYS       1                      6     921
+    SYS       1                      7     231
+    SYS       6                  1,6,6     633
+    SYS       6                  1,6,7     288
+    SYS       6                  6,6,6     288
+    SYS       6                  6,6,7     288
+    SYS       6                  6,6,8     231
+    SYS       7                  1,6,6     231
+    SYS       7                    6,6      57
+    SYS       8                      6     231
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    SYS The following atom types are present in the system:
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS              Atom type   ID   Number of atoms
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SYS         C_C3_H3C2N_TPB    0        57
+    SYS           C_HC2_C4_TPB    1        57
+    SYS             H_C_C2_TPB    2        57
+    SYS           C_HCN_C3_TPB    3        57
+    SYS             H_C_CN_TPB    4        57
+    SYS           C_C2N_0_PA11    5       182
+    SYS      C_HC2_HC2N_0_PA11    6       364
+    SYS          H_C_C2_0_PA11    7       364
+    SYS               N_0_PA11    8       182
+    SYS             H_N_0_PA11    9       182
+    SYS        C_C2N_H2C3_PA12   10        49
+    SYS      C_C2N_H3C3_0_PA12   11        49
+    SYS      C_HC2_HC2N_0_PA12   12        98
+    SYS      C_HC2_HC2N_1_PA12   13        98
+    SYS          H_C_C2_0_PA12   14        98
+    SYS          H_C_C2_1_PA12   15        98
+    SYS              N_C2_PA12   16        49
+    SYS           N_HC2_0_PA12   17        49
+    SYS             H_N_0_PA12   18        49
+    SYS                C_C3_TP   19       231
+    SYS               C_C2O_TP   20       231
+    SYS                   O_TP   21       231
+    SYS               C_HCN_TP   22       231
+    SYS              H_C_CN_TP   23       231
+    SYS             C_C2N_PA22   24         8
+    SYS             C_HC2_PA22   25        16
+    SYS               H_C_PA22   26        16
+    SYS              N_C2_PA22   27         8
+    SYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+    GEN Generating force field from pars.txt
+
+ FPINIT Force part: valence
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: pair_ei
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT   scalings:          1.000 1.000 1.000
+ FPINIT   real space cutoff:    15.0000
+ FPINIT   truncation:     switch3     4.0000
+ FPINIT   alpha:                    0.19067
+ FPINIT   relative permittivity: 1.000
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: ewald_reci
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT   alpha:                    0.19067
+ FPINIT   gcut:                     0.19067
+ FPINIT   relative permittivity: 1.000
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: ewald_cor
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT   alpha:                0.19067
+ FPINIT   relative permittivity   1.000
+ FPINIT   scalings:          1.000 1.000 1.000
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: ewald_neut
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT   alpha:                      0.19067
+ FPINIT   relative permittivity:   1.000
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: pair_mm3
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT   scalings:          0.000 0.000 1.000
+ FPINIT   real space cutoff:    15.0000
+ FPINIT   truncation:     switch3     4.0000
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ FPINIT Force part: tailcorr_pair_mm3
+ FPINIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ FFINIT Force field with 7 parts: valence, pair_ei, ewald_reci, ewald_cor,
+ FFINIT                           ewald_neut, pair_mm3, tailcorr_pair_mm3.
+ FFINIT Neighborlist present: True
+
+  CGOPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CGOPT Conv.val. = the highest ratio of a convergence criterion over its
+  CGOPT             threshold.
+  CGOPT N         = the number of convergence criteria that is not met.
+  CGOPT Worst     = the name of the convergence criterion that is worst.
+  CGOPT counter  Conv.val.  N           Worst     Energy   Walltime
+  CGOPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CGOPT       0  2.000e+00 -1      first_step  -187235.2        0.0
+  CGOPT       1  1.597e+04  8      grvecs_rms  -190210.3        2.6
+  CGOPT       2  1.409e+04  8      grvecs_rms  -191524.5        5.2
+  CGOPT       3  1.228e+04  8      grvecs_rms  -193507.4        7.9
+  CGOPT       4  1.100e+04  8      grvecs_rms  -194116.3       10.5
+  CGOPT       5  9.720e+03  8      grvecs_rms  -194786.9       13.1
+  CGOPT       6  8.480e+03  8      grvecs_rms  -195092.6       15.7
+  CGOPT       7  6.594e+03  8      grvecs_rms  -195650.9       18.3
+  CGOPT       8  6.004e+03  8      grvecs_rms  -195909.2       20.9
+  CGOPT       9  4.948e+03  8      grvecs_rms  -196139.9       23.5
+  CGOPT      10  3.605e+03  8      grvecs_rms  -196224.5       26.1
+  CGOPT      11  3.726e+03  8      grvecs_rms  -196316.8       28.7
+  CGOPT      12  2.376e+03  8      grvecs_rms  -196404.6       31.3
+  CGOPT      13  2.983e+03  8      grvecs_rms  -196471.8       33.9
+  CGOPT      14  1.516e+03  8      grvecs_rms  -196515.4       36.5
+  CGOPT      15  2.869e+03  8      grvecs_rms  -196552.4       39.1
+  CGOPT      16  1.583e+03  8      grvecs_rms  -196584.0       41.7
+  CGOPT      17  1.265e+03  8      grvecs_rms  -196606.4       44.3
+  CGOPT      18  4.706e+02  8      grvecs_rms  -196624.8       46.9
+  CGOPT      19  1.113e+03  8      grvecs_rms  -196640.7       49.5
+  CGOPT      20  4.398e+02  8      grvecs_rms  -196655.4       52.1
+  CGOPT      21  1.527e+03  8      grvecs_rms  -196671.2       54.7
+  CGOPT      22  9.401e+02  8      grvecs_rms  -196685.4       57.3
+  CGOPT      23  4.944e+02  8      grvecs_rms  -196695.1       59.9
+  CGOPT      24  1.272e+03  8      grvecs_rms  -196706.5       62.5
+  CGOPT      25  6.382e+02  8      grvecs_rms  -196718.1       65.1
+  CGOPT      26  1.060e+03  8      grvecs_rms  -196728.3       67.7
+  CGOPT      27  8.380e+02  8      grvecs_rms  -196741.9       70.3
+  CGOPT      28  1.067e+03  8      grvecs_rms  -196754.3       72.9
+  CGOPT      29  1.138e+03  8      grvecs_rms  -196769.4       75.5
+  CGOPT      30  1.229e+03  8      grvecs_rms  -196786.7       78.1
+  CGOPT      31  1.130e+03  8      grvecs_rms  -196801.2       80.7
+  CGOPT      32  1.065e+03  8      grvecs_rms  -196816.6       83.3
+  CGOPT      33  1.362e+03  8      grvecs_rms  -196832.5       85.9
+  CGOPT      34  1.428e+03  8      grvecs_rms  -196849.4       88.5
+  CGOPT      35  1.069e+03  8      grvecs_rms  -196862.4       91.1
+  CGOPT      36  1.093e+03  8      grvecs_rms  -196874.4       93.7
+  CGOPT      37  9.733e+02  8      grvecs_rms  -196887.9       96.3
+  CGOPT      38  9.358e+02  8      grvecs_rms  -196898.3       98.9
+  CGOPT      39  6.494e+02  8      grvecs_rms  -196910.2      101.6
+  CGOPT      40  8.770e+02  8      grvecs_rms  -196919.2      104.2
+  CGOPT      41  6.508e+02  8      grvecs_rms  -196927.7      106.8
+  CGOPT      42  5.339e+02  8      grvecs_rms  -196934.7      109.4
+  CGOPT      43  4.975e+02  8      grvecs_rms  -196940.8      112.0
+  CGOPT      44  4.337e+02  8      grvecs_rms  -196945.2      114.7
+  CGOPT      45  2.432e+02  8      grvecs_rms  -196950.8      117.3
+  CGOPT      46  2.199e+02  8      grvecs_rms  -196958.5      119.9
+  CGOPT      47  1.247e+02  8      grvecs_rms  -196963.5      122.5
+  CGOPT      48  3.766e+02  8      grvecs_rms  -196968.2      125.2
+  CGOPT      49  3.352e+02  8      grvecs_rms  -196973.1      127.8
+  CGOPT      50  3.974e+02  8      grvecs_rms  -196977.5      130.4
+  CGOPT      51  5.119e+02  8      grvecs_rms  -196981.7      133.0
+  CGOPT      52  3.729e+02  8      grvecs_rms  -196985.4      135.7
+  CGOPT      53  3.774e+02  8      grvecs_rms  -196988.9      138.3
+  CGOPT      54  5.032e+02  8      grvecs_rms  -196993.3      140.9
+  CGOPT      55  4.515e+02  8      grvecs_rms  -196998.5      143.5
+  CGOPT      56  4.515e+02  8      grvecs_rms  -197004.0      146.2
+  CGOPT      57  4.331e+02  8      grvecs_rms  -197008.5      148.8
+  CGOPT      58  5.177e+02  8      grvecs_rms  -197012.8      151.4
+  CGOPT      59  4.516e+02  8      grvecs_rms  -197016.7      154.1
+  CGOPT      60  4.528e+02  8      grvecs_rms  -197021.0      156.7
+  CGOPT      61  3.579e+02  8      grvecs_rms  -197025.6      159.3
+  CGOPT      62  3.892e+02  8      grvecs_rms  -197029.7      161.9
+  CGOPT      63  2.906e+02  8      grvecs_rms  -197033.9      164.6
+  CGOPT      64  2.887e+02  8      grvecs_rms  -197036.8      167.2
+  CGOPT      65  2.202e+02  8      grvecs_rms  -197040.5      169.8
+  CGOPT      66  2.362e+02  8      grvecs_rms  -197043.4      172.4
+  CGOPT      67  3.318e+02  8      grvecs_rms  -197046.6      175.1
+  CGOPT      68  8.245e+01  8  gpos_max(2857)  -197049.3      177.7
+  CGOPT      69  3.126e+02  8      grvecs_rms  -197052.1      180.3
+  CGOPT      70  1.782e+02  8      grvecs_rms  -197054.7      183.0
+  CGOPT      71  2.137e+02  8      grvecs_rms  -197057.2      185.6
+  CGOPT      72  3.297e+02  8      grvecs_rms  -197059.7      188.2
+  CGOPT      73  2.643e+02  8      grvecs_rms  -197062.7      190.9
+  CGOPT      74  3.411e+02  8      grvecs_rms  -197065.6      193.5
+  CGOPT      75  4.693e+02  8      grvecs_rms  -197068.8      196.1
+  CGOPT      76  3.943e+02  8      grvecs_rms  -197072.1      198.7
+  CGOPT      77  4.153e+02  8      grvecs_rms  -197074.9      201.4
+  CGOPT      78  3.854e+02  8      grvecs_rms  -197077.6      204.0
+  CGOPT      79  4.231e+02  8      grvecs_rms  -197080.7      206.6
+  CGOPT      80  4.921e+02  8      grvecs_rms  -197083.6      209.3
+  CGOPT      81  4.399e+02  8      grvecs_rms  -197086.4      211.9
+  CGOPT      82  3.332e+02  8      grvecs_rms  -197088.7      214.5
+  CGOPT      83  2.999e+02  8      grvecs_rms  -197091.1      217.1
+  CGOPT      84  3.852e+02  8      grvecs_rms  -197093.3      219.8
+  CGOPT      85  3.334e+02  8      grvecs_rms  -197095.4      222.4
+  CGOPT      86  2.541e+02  8      grvecs_rms  -197097.3      225.0
+  CGOPT      87  1.682e+02  8      grvecs_rms  -197099.1      227.7
+  CGOPT      88  1.589e+02  8      grvecs_rms  -197100.8      230.3
+  CGOPT      89  2.828e+02  8      grvecs_rms  -197102.9      232.9
+  CGOPT      90  2.700e+02  8      grvecs_rms  -197104.6      235.6
+  CGOPT      91  1.494e+02  8  gpos_max(2911)  -197106.5      238.2
+  CGOPT      92  1.361e+02  8      grvecs_rms  -197108.3      240.9
+  CGOPT      93  2.370e+02  8      grvecs_rms  -197110.4      243.5
+  CGOPT      94  1.985e+02  8      grvecs_rms  -197111.9      246.1
+  CGOPT      95  2.015e+02  8      grvecs_rms  -197113.6      248.8
+  CGOPT      96  2.173e+02  8      grvecs_rms  -197115.0      251.4
+  CGOPT      97  3.309e+02  8      grvecs_rms  -197116.5      254.0
+  CGOPT      98  2.354e+02  8      grvecs_rms  -197118.1      256.7
+  CGOPT      99  2.546e+02  8      grvecs_rms  -197119.8      259.3
+  CGOPT     100  2.912e+02  8      grvecs_rms  -197121.5      261.9
+  CGOPT     101  3.796e+02  8      grvecs_rms  -197123.3      264.6
+  CGOPT     102  2.893e+02  8      grvecs_rms  -197125.3      267.2
+  CGOPT     103  3.482e+02  8      grvecs_rms  -197127.4      269.8
+  CGOPT     104  3.190e+02  8      grvecs_rms  -197129.5      272.5
+  CGOPT     105  2.387e+02  8      grvecs_rms  -197131.4      275.1
+  CGOPT     106  2.607e+02  8      grvecs_rms  -197133.3      277.7
+  CGOPT     107  2.148e+02  8      grvecs_rms  -197135.2      280.4
+  CGOPT     108  1.995e+02  8      grvecs_rms  -197137.0      283.0
+  CGOPT     109  1.776e+02  8      grvecs_rms  -197138.8      285.7
+  CGOPT     110  1.391e+02  8  gpos_max(2858)  -197140.5      288.3
+  CGOPT     111  1.532e+02  8  gpos_max(2911)  -197141.9      290.9
+  CGOPT     112  1.595e+02  8  gpos_max(2911)  -197143.3      293.6
+  CGOPT     113  1.181e+02  8  gpos_max(2911)  -197144.7      296.2
+  CGOPT     114  2.735e+02  8      grvecs_rms  -197146.1      298.8
+  CGOPT     115  2.227e+02  8      grvecs_rms  -197147.7      301.5
+  CGOPT     116  2.419e+02  8      grvecs_rms  -197149.3      304.1
+  CGOPT     117  2.170e+02  8      grvecs_rms  -197150.7      306.8
+  CGOPT     118  2.413e+02  8      grvecs_rms  -197152.2      309.4
+  CGOPT     119  2.328e+02  8      grvecs_rms  -197153.9      312.0
+  CGOPT     120  2.220e+02  8      grvecs_rms  -197155.0      314.7
+  CGOPT     121  1.879e+02  8      grvecs_rms  -197156.5      317.3
+  CGOPT     122  2.351e+02  8      grvecs_rms  -197158.0      319.9
+  CGOPT     123  2.055e+02  8      grvecs_rms  -197159.6      322.6
+  CGOPT     124  2.212e+02  8      grvecs_rms  -197161.2      325.2
+  CGOPT     125  1.948e+02  8      grvecs_rms  -197162.6      327.9
+  CGOPT     126  2.272e+02  8      grvecs_rms  -197164.2      330.5
+  CGOPT     127  1.575e+02  8      grvecs_rms  -197165.6      333.1
+  CGOPT     128  1.565e+02  8      grvecs_rms  -197166.9      335.8
+  CGOPT     129  1.610e+02  8      grvecs_rms  -197168.0      338.4
+  CGOPT     130  2.124e+02  8      grvecs_rms  -197169.0      341.1
+  CGOPT     131  1.323e+02  8      grvecs_rms  -197170.2      343.7
+  CGOPT     132  1.828e+02  8      grvecs_rms  -197171.4      346.3
+  CGOPT     133  1.147e+02  8      grvecs_rms  -197172.6      349.0
+  CGOPT     134  8.725e+01  8      grvecs_rms  -197173.7      351.6
+  CGOPT     135  1.609e+02  8      grvecs_rms  -197174.9      354.3
+  CGOPT     136  1.488e+02  8      grvecs_rms  -197176.0      356.9
+  CGOPT     137  1.019e+02  8      grvecs_rms  -197176.9      359.6
+  CGOPT     138  9.565e+01  8      grvecs_rms  -197177.8      362.2
+  CGOPT     139  1.054e+02  8      grvecs_rms  -197178.5      364.9
+  CGOPT     140  1.209e+02  8      grvecs_rms  -197179.5      367.5
+  CGOPT     141  1.381e+02  8      grvecs_rms  -197180.3      370.1
+  CGOPT     142  1.622e+02  8      grvecs_rms  -197181.2      372.8
+  CGOPT     143  1.573e+02  8      grvecs_rms  -197181.9      375.4
+  CGOPT     144  1.966e+02  8      grvecs_rms  -197182.7      378.1
+  CGOPT     145  1.759e+02  8      grvecs_rms  -197183.5      380.7
+  CGOPT     146  1.856e+02  8      grvecs_rms  -197184.0      383.4
+  CGOPT     147  1.430e+02  8      grvecs_rms  -197184.7      386.0
+  CGOPT     148  1.609e+02  8      grvecs_rms  -197185.3      388.7
+  CGOPT     149  1.347e+02  8      grvecs_rms  -197185.9      391.3
+  CGOPT     150  1.158e+02  8      grvecs_rms  -197186.5      394.0
+  CGOPT     151  9.439e+01  8      grvecs_rms  -197187.1      396.6
+  CGOPT     152  8.676e+01  8      grvecs_rms  -197187.6      399.2
+  CGOPT     153  8.574e+01  8      grvecs_rms  -197188.1      401.9
+  CGOPT     154  1.184e+02  8      grvecs_rms  -197188.5      404.5
+  CGOPT     155  6.222e+01  8  gpos_max(2911)  -197189.0      407.2
+  CGOPT     156  6.874e+01  8      grvecs_rms  -197189.4      409.8
+  CGOPT     157  1.244e+02  8      grvecs_rms  -197189.8      412.5
+  CGOPT     158  6.286e+01  8      grvecs_rms  -197190.2      415.1
+  CGOPT     159  8.188e+01  8      grvecs_rms  -197190.6      417.8
+  CGOPT     160  1.043e+02  8      grvecs_rms  -197191.0      420.4
+  CGOPT     161  8.169e+01  8      grvecs_rms  -197191.4      423.1
+  CGOPT     162  9.704e+01  8      grvecs_rms  -197191.7      425.7
+  CGOPT     163  1.101e+02  8      grvecs_rms  -197192.1      428.3
+  CGOPT     164  1.042e+02  8      grvecs_rms  -197192.5      431.0
+  CGOPT     165  1.393e+02  8      grvecs_rms  -197192.8      433.6
+  CGOPT     166  1.055e+02  7      grvecs_rms  -197193.2      436.3
+  CGOPT     167  1.180e+02  8      grvecs_rms  -197193.5      438.9
+  CGOPT     168  9.568e+01  8      grvecs_rms  -197193.8      441.6
+  CGOPT     169  1.326e+02  8      grvecs_rms  -197194.2      444.2
+  CGOPT     170  8.984e+01  8      grvecs_rms  -197194.4      446.9
+  CGOPT     171  1.505e+02  8      grvecs_rms  -197194.7      449.5
+  CGOPT     172  8.192e+01  8      grvecs_rms  -197194.9      452.2
+  CGOPT     173  8.176e+01  8      grvecs_rms  -197195.1      454.8
+  CGOPT     174  6.194e+01  8      grvecs_rms  -197195.3      457.5
+  CGOPT     175  7.807e+01  8      grvecs_rms  -197195.6      460.1
+  CGOPT     176  5.801e+01  8      grvecs_rms  -197195.8      462.8
+  CGOPT     177  1.079e+02  8      grvecs_rms  -197196.0      465.4
+  CGOPT     178  8.859e+01  8      grvecs_rms  -197196.2      468.1
+  CGOPT     179  5.984e+01  8      grvecs_rms  -197196.4      470.7
+  CGOPT     180  9.587e+01  8      grvecs_rms  -197196.7      473.4
+  CGOPT     181  5.826e+01  8      grvecs_rms  -197196.8      476.0
+  CGOPT     182  7.506e+01  8      grvecs_rms  -197197.0      478.7
+  CGOPT     183  6.933e+01  8      grvecs_rms  -197197.2      481.3
+  CGOPT     184  7.623e+01  8      grvecs_rms  -197197.4      484.0
+  CGOPT     185  7.923e+01  8      grvecs_rms  -197197.6      486.6
+  CGOPT     186  1.033e+02  8      grvecs_rms  -197197.7      489.3
+  CGOPT     187  7.702e+01  8      grvecs_rms  -197197.9      491.9
+  CGOPT     188  8.638e+01  8      grvecs_rms  -197198.1      494.6
+  CGOPT     189  7.939e+01  8      grvecs_rms  -197198.3      497.2
+  CGOPT     190  8.676e+01  8      grvecs_rms  -197198.5      499.9
+  CGOPT     191  6.197e+01  8      grvecs_rms  -197198.8      502.5
+  CGOPT     192  7.769e+01  8      grvecs_rms  -197199.0      505.2
+  CGOPT     193  6.064e+01  8      grvecs_rms  -197199.2      507.8
+  CGOPT     194  5.120e+01  8      grvecs_rms  -197199.4      510.5
+  CGOPT     195  5.370e+01  8      grvecs_rms  -197199.5      513.1
+  CGOPT     196  2.892e+01  8      grvecs_rms  -197199.7      515.7
+  CGOPT     197  5.343e+01  8      grvecs_rms  -197199.9      518.4
+  CGOPT     198  2.792e+01  8      grvecs_rms  -197200.0      521.0
+  CGOPT     199  3.713e+01  8      grvecs_rms  -197200.2      523.7
+  CGOPT     200  4.428e+01  8      grvecs_rms  -197200.3      526.3
+  CGOPT     201  4.226e+01  8      grvecs_rms  -197200.5      529.0
+  CGOPT     202  5.701e+01  8      grvecs_rms  -197200.6      531.6
+  CGOPT     203  4.336e+01  8      grvecs_rms  -197200.8      534.3
+  CGOPT     204  5.070e+01  8      grvecs_rms  -197200.9      536.9
+  CGOPT     205  5.220e+01  8      grvecs_rms  -197201.1      539.6
+  CGOPT     206  4.722e+01  8      grvecs_rms  -197201.2      542.2
+  CGOPT     207  5.427e+01  8      grvecs_rms  -197201.4      544.9
+  CGOPT     208  5.534e+01  8      grvecs_rms  -197201.5      547.5
+  CGOPT     209  5.166e+01  8      grvecs_rms  -197201.6      550.2
+  CGOPT     210  5.727e+01  8      grvecs_rms  -197201.8      552.8
+  CGOPT     211  5.866e+01  8      grvecs_rms  -197201.9      555.5
+  CGOPT     212  6.267e+01  8      grvecs_rms  -197202.1      558.1
+  CGOPT     213  7.321e+01  8      grvecs_rms  -197202.2      560.8
+  CGOPT     214  7.301e+01  8      grvecs_rms  -197202.4      563.4
+  CGOPT     215  4.387e+01  8      grvecs_rms  -197202.5      566.1
+  CGOPT     216  6.338e+01  8      grvecs_rms  -197202.6      568.7
+  CGOPT     217  3.098e+01  8      grvecs_rms  -197202.8      571.4
+  CGOPT     218  3.782e+01  8      grvecs_rms  -197202.9      574.0
+  CGOPT     219  1.995e+01  8      grvecs_rms  -197203.1      576.7
+  CGOPT     220  4.391e+01  8      grvecs_rms  -197203.2      579.3
+  CGOPT     221  2.519e+01  8      grvecs_rms  -197203.3      582.0
+  CGOPT     222  5.106e+01  8      grvecs_rms  -197203.5      584.6
+  CGOPT     223  4.134e+01  8      grvecs_rms  -197203.6      587.3
+  CGOPT     224  3.576e+01  8      grvecs_rms  -197203.7      589.9
+  CGOPT     225  5.804e+01  8      grvecs_rms  -197203.9      592.6
+  CGOPT     226  5.037e+01  8      grvecs_rms  -197204.0      595.2
+  CGOPT     227  5.889e+01  8      grvecs_rms  -197204.1      597.9
+  CGOPT     228  5.073e+01  8      grvecs_rms  -197204.2      600.5
+  CGOPT     229  5.238e+01  8      grvecs_rms  -197204.4      603.2
+  CGOPT     230  5.563e+01  8      grvecs_rms  -197204.5      605.8
+  CGOPT     231  5.812e+01  8      grvecs_rms  -197204.7      608.5
+  CGOPT     232  6.691e+01  8      grvecs_rms  -197204.8      611.1
+  CGOPT     233  5.117e+01  8      grvecs_rms  -197204.9      613.8
+  CGOPT     234  4.931e+01  8      grvecs_rms  -197205.0      616.4
+  CGOPT     235  4.718e+01  8      grvecs_rms  -197205.2      619.1
+  CGOPT     236  4.860e+01  8      grvecs_rms  -197205.3      621.7
+  CGOPT     237  5.716e+01  8      grvecs_rms  -197205.4      624.4
+  CGOPT     238  6.840e+01  8      grvecs_rms  -197205.6      627.0
+  CGOPT     239  4.077e+01  8      grvecs_rms  -197205.7      629.7
+  CGOPT     240  6.001e+01  8      grvecs_rms  -197205.8      632.3
+  CGOPT     241  3.571e+01  8      grvecs_rms  -197206.0      635.0
+  CGOPT     242  5.276e+01  8      grvecs_rms  -197206.1      637.6
+  CGOPT     243  2.887e+01  8      grvecs_rms  -197206.2      640.3
+  CGOPT     244  4.309e+01  8      grvecs_rms  -197206.3      642.9
+  CGOPT     245  3.080e+01  8      grvecs_rms  -197206.4      645.6
+  CGOPT     246  3.294e+01  8  gpos_max(2911)  -197206.5      648.2
+  CGOPT     247  4.351e+01  8  gpos_max(2911)  -197206.6      650.8
+  CGOPT     248  4.102e+01  8  gpos_max(2911)  -197206.7      653.3
+  CGOPT     249  4.799e+01  8      grvecs_rms  -197206.8      655.8
+  CGOPT     250  4.214e+01  8      grvecs_rms  -197206.9      658.3
+  CGOPT     251  4.710e+01  8      grvecs_rms  -197207.0      660.8
+  CGOPT     252  4.272e+01  8      grvecs_rms  -197207.2      663.4
+  CGOPT     253  4.690e+01  8      grvecs_rms  -197207.3      665.9
+  CGOPT     254  3.284e+01  8      grvecs_rms  -197207.4      668.4
+  CGOPT     255  6.358e+01  8      grvecs_rms  -197207.5      671.0
+  CGOPT     256  3.435e+01  8      grvecs_rms  -197207.6      673.5
+  CGOPT     257  4.055e+01  8      grvecs_rms  -197207.8      676.0
+  CGOPT     258  4.975e+01  8      grvecs_rms  -197207.9      678.6
+  CGOPT     259  3.261e+01  8      grvecs_rms  -197208.0      681.1
+  CGOPT     260  2.746e+01  8      grvecs_rms  -197208.1      683.8
+  CGOPT     261  2.813e+01  8      grvecs_rms  -197208.1      686.4
+  CGOPT     262  1.683e+01  8      grvecs_rms  -197208.2      689.1
+  CGOPT     263  3.739e+01  8      grvecs_rms  -197208.3      691.7
+  CGOPT     264  1.718e+01  8   gpos_max(612)  -197208.5      694.4
+  CGOPT     265  4.164e+01  8      grvecs_rms  -197208.6      697.0
+  CGOPT     266  2.482e+01  8      grvecs_rms  -197208.7      699.7
+  CGOPT     267  2.949e+01  8      grvecs_rms  -197208.8      702.2
+  CGOPT     268  3.043e+01  8      grvecs_rms  -197208.9      704.7
+  CGOPT     269  6.402e+01  8      grvecs_rms  -197209.0      707.2
+  CGOPT     270  4.630e+01  8      grvecs_rms  -197209.1      709.7
+  CGOPT     271  2.994e+01  8      grvecs_rms  -197209.2      712.3
+  CGOPT     272  5.764e+01  8      grvecs_rms  -197209.3      714.8
+  CGOPT     273  4.327e+01  8      grvecs_rms  -197209.4      717.3
+  CGOPT     274  4.452e+01  8      grvecs_rms  -197209.4      719.8
+  CGOPT     275  4.298e+01  8      grvecs_rms  -197209.5      722.4
+  CGOPT     276  3.579e+01  8      grvecs_rms  -197209.7      724.9
+  CGOPT     277  3.659e+01  8      grvecs_rms  -197209.8      727.4
+  CGOPT     278  2.703e+01  8      grvecs_rms  -197209.9      729.9
+  CGOPT     279  2.806e+01  8      grvecs_rms  -197210.0      732.5
+  CGOPT     280  4.475e+01  8      grvecs_rms  -197210.1      735.0
+  CGOPT     281  4.542e+01  8      grvecs_rms  -197210.2      737.5
+  CGOPT     282  3.671e+01  8      grvecs_rms  -197210.3      740.0
+  CGOPT     283  4.708e+01  8      grvecs_rms  -197210.4      742.6
+  CGOPT     284  3.447e+01  8      grvecs_rms  -197210.5      745.1
+  CGOPT     285  1.858e+01  8   gpos_max(626)  -197210.7      747.6
+  CGOPT     286  3.907e+01  8      grvecs_rms  -197210.8      750.1
+  CGOPT     287  1.760e+01  8      grvecs_rms  -197210.9      752.7
+  CGOPT     288  2.638e+01  8      grvecs_rms  -197211.0      755.2
+  CGOPT     289  2.729e+01  8      grvecs_rms  -197211.1      757.7
+  CGOPT     290  2.151e+01  8   gpos_max(634)  -197211.1      760.2
+  CGOPT     291  2.119e+01  8      grvecs_rms  -197211.2      762.8
+  CGOPT     292  2.985e+01  8      grvecs_rms  -197211.3      765.3
+  CGOPT     293  2.790e+01  8      grvecs_rms  -197211.4      767.8
+  CGOPT     294  3.393e+01  8      grvecs_rms  -197211.5      770.3
+  CGOPT     295  5.051e+01  8      grvecs_rms  -197211.6      772.9
+  CGOPT     296  4.179e+01  8      grvecs_rms  -197211.7      775.4
+  CGOPT     297  5.304e+01  8      grvecs_rms  -197211.8      777.9
+  CGOPT     298  3.580e+01  8      grvecs_rms  -197211.9      780.4
+  CGOPT     299  2.862e+01  8  gpos_max(2911)  -197212.1      783.0
+  CGOPT     300  4.596e+01  8      grvecs_rms  -197212.1      785.5
+  CGOPT     301  4.162e+01  8      grvecs_rms  -197212.2      788.0
+  CGOPT     302  3.649e+01  8      grvecs_rms  -197212.3      790.6
+  CGOPT     303  3.039e+01  8      grvecs_rms  -197212.4      793.1
+  CGOPT     304  1.970e+01  8  gpos_max(2911)  -197212.5      795.6
+  CGOPT     305  3.463e+01  8      grvecs_rms  -197212.6      798.1
+  CGOPT     306  1.965e+01  8  gpos_max(2911)  -197212.7      800.7
+  CGOPT     307  2.729e+01  8      grvecs_rms  -197212.8      803.2
+  CGOPT     308  3.178e+01  8  gpos_max(2911)  -197213.0      805.7
+  CGOPT     309  3.565e+01  8  gpos_max(2911)  -197213.1      808.2
+  CGOPT     310  3.772e+01  8  gpos_max(2911)  -197213.2      810.8
+  CGOPT     311  4.666e+01  8      grvecs_rms  -197213.3      813.3
+  CGOPT     312  3.328e+01  8      grvecs_rms  -197213.4      815.8
+  CGOPT     313  2.718e+01  8      grvecs_rms  -197213.5      818.3
+  CGOPT     314  5.340e+01  8      grvecs_rms  -197213.6      820.9
+  CGOPT     315  3.197e+01  8      grvecs_rms  -197213.7      823.4
+  CGOPT     316  4.985e+01  8      grvecs_rms  -197213.8      825.9
+  CGOPT     317  3.855e+01  8      grvecs_rms  -197213.9      828.4
+  CGOPT     318  3.910e+01  8      grvecs_rms  -197214.0      831.0
+  CGOPT     319  3.709e+01  8      grvecs_rms  -197214.0      833.5
+  CGOPT     320  3.200e+01  8      grvecs_rms  -197214.1      836.0
+  CGOPT     321  3.471e+01  8      grvecs_rms  -197214.2      838.5
+  CGOPT     322  4.421e+01  8      grvecs_rms  -197214.3      841.1
+  CGOPT     323  3.437e+01  8      grvecs_rms  -197214.4      843.6
+  CGOPT     324  5.037e+01  8      grvecs_rms  -197214.5      846.1
+  CGOPT     325  4.216e+01  8      grvecs_rms  -197214.6      848.7
+  CGOPT     326  2.747e+01  8      grvecs_rms  -197214.7      851.2
+  CGOPT     327  2.175e+01  8      grvecs_rms  -197214.7      853.7
+  CGOPT     328  3.022e+01  8      grvecs_rms  -197214.8      856.2
+  CGOPT     329  1.538e+01  8  gpos_max(2858)  -197214.9      858.8
+  CGOPT     330  1.946e+01  8      grvecs_rms  -197215.0      861.3
+  CGOPT     331  2.167e+01  8  gpos_max(2911)  -197215.0      863.8
+  CGOPT     332  3.531e+01  8      grvecs_rms  -197215.1      866.3
+  CGOPT     333  2.882e+01  8      grvecs_rms  -197215.2      868.9
+  CGOPT     334  2.333e+01  8      grvecs_rms  -197215.3      871.4
+  CGOPT     335  2.560e+01  8      grvecs_rms  -197215.4      873.9
+  CGOPT     336  4.015e+01  8      grvecs_rms  -197215.5      876.5
+  CGOPT     337  2.937e+01  8      grvecs_rms  -197215.5      879.0
+  CGOPT     338  4.287e+01  8      grvecs_rms  -197215.6      881.5
+  CGOPT     339  5.379e+01  7      grvecs_rms  -197215.7      884.1
+  CGOPT     340  4.151e+01  8      grvecs_rms  -197215.8      886.6
+  CGOPT     341  3.239e+01  8      grvecs_rms  -197215.8      889.1
+  CGOPT     342  3.282e+01  8      grvecs_rms  -197215.9      891.7
+  CGOPT     343  3.882e+01  8      grvecs_rms  -197216.0      894.2
+  CGOPT     344  2.882e+01  8      grvecs_rms  -197216.1      896.7
+  CGOPT     345  3.646e+01  8      grvecs_rms  -197216.1      899.2
+  CGOPT     346  2.081e+01  8      grvecs_rms  -197216.2      901.8
+  CGOPT     347  2.864e+01  8      grvecs_rms  -197216.3      904.3
+  CGOPT     348  1.647e+01  8  gpos_max(2078)  -197216.4      906.8
+  CGOPT     349  2.623e+01  8      grvecs_rms  -197216.4      909.4
+  CGOPT     350  2.005e+01  8  gpos_max(2078)  -197216.5      911.9
+  CGOPT     351  3.109e+01  8      grvecs_rms  -197216.6      914.4
+  CGOPT     352  3.013e+01  7      grvecs_rms  -197216.6      916.9
+  CGOPT     353  4.162e+01  7      grvecs_rms  -197216.7      919.5
+  CGOPT     354  2.694e+01  7      grvecs_rms  -197216.8      922.0
+  CGOPT     355  3.240e+01  7      grvecs_rms  -197216.8      924.5
+  CGOPT     356  2.927e+01  7      grvecs_rms  -197216.9      927.1
+  CGOPT     357  4.112e+01  6      grvecs_rms  -197216.9      929.6
+  CGOPT     358  2.962e+01  7      grvecs_rms  -197217.0      932.1
+  CGOPT     359  3.131e+01  6      grvecs_rms  -197217.1      934.7
+  CGOPT     360  2.381e+01  6      grvecs_rms  -197217.1      937.2
+  CGOPT     361  2.524e+01  6   gpos_max(135)  -197217.2      939.7
+  CGOPT     362  2.784e+01  6      grvecs_rms  -197217.3      942.3
+  CGOPT     363  2.562e+01  7      grvecs_rms  -197217.3      944.8
+  CGOPT     364  2.543e+01  6      grvecs_rms  -197217.4      947.3
+  CGOPT     365  2.031e+01  7      grvecs_rms  -197217.4      949.8
+  CGOPT     366  2.702e+01  6      grvecs_rms  -197217.5      952.4
+  CGOPT     367  2.233e+01  7      grvecs_rms  -197217.6      954.9
+  CGOPT     368  2.310e+01  7      grvecs_rms  -197217.6      957.4
+  CGOPT     369  2.095e+01  7      grvecs_rms  -197217.7      960.0
+  CGOPT     370  2.643e+01  7      grvecs_rms  -197217.7      962.5
+  CGOPT     371  2.613e+01  7  gpos_max(2858)  -197217.8      965.0
+  CGOPT     372  2.845e+01  7  gpos_max(2911)  -197217.9      967.5
+  CGOPT     373  2.072e+01  7  gpos_max(2911)  -197217.9      970.1
+  CGOPT     374  1.928e+01  7  gpos_max(2911)  -197218.0      972.6
+  CGOPT     375  2.425e+01  7      grvecs_rms  -197218.0      975.1
+  CGOPT     376  2.212e+01  7      grvecs_rms  -197218.1      977.7
+  CGOPT     377  2.281e+01  7      grvecs_rms  -197218.1      980.2
+  CGOPT     378  2.356e+01  7      grvecs_rms  -197218.2      982.7
+  CGOPT     379  2.311e+01  7  gpos_max(2911)  -197218.2      985.3
+  CGOPT     380  2.829e+01  7  gpos_max(2911)  -197218.3      987.8
+  CGOPT     381  3.068e+01  7  gpos_max(2858)  -197218.3      990.3
+  CGOPT     382  2.797e+01  7      grvecs_rms  -197218.4      992.9
+  CGOPT     383  2.151e+01  7  gpos_max(2911)  -197218.4      995.4
+  CGOPT     384  2.557e+01  7      grvecs_rms  -197218.5      997.9
+  CGOPT     385  2.475e+01  7      grvecs_rms  -197218.5     1000.4
+  CGOPT     386  2.782e+01  7      grvecs_rms  -197218.6     1003.0
+  CGOPT     387  2.121e+01  7      grvecs_rms  -197218.6     1005.5
+  CGOPT     388  1.938e+01  8      grvecs_rms  -197218.7     1008.0
+  CGOPT     389  2.290e+01  8      grvecs_rms  -197218.7     1010.6
+  CGOPT     390  2.252e+01  8  gpos_max(2911)  -197218.8     1013.1
+  CGOPT     391  2.166e+01  8  gpos_max(2911)  -197218.8     1015.6
+  CGOPT     392  2.101e+01  8  gpos_max(2911)  -197218.9     1018.2
+  CGOPT     393  2.249e+01  8  gpos_max(2911)  -197218.9     1020.7
+  CGOPT     394  2.663e+01  7      grvecs_rms  -197219.0     1023.2
+  CGOPT     395  2.957e+01  8      grvecs_rms  -197219.0     1025.7
+  CGOPT     396  1.843e+01  8      grvecs_rms  -197219.1     1028.3
+  CGOPT     397  2.179e+01  7      grvecs_rms  -197219.1     1030.8
+  CGOPT     398  2.239e+01  7      grvecs_rms  -197219.2     1033.3
+  CGOPT     399  1.585e+01  7      grvecs_rms  -197219.2     1035.9
+  CGOPT     400  1.985e+01  7  gpos_max(2911)  -197219.3     1038.4
+  CGOPT     401  1.880e+01  7  gpos_max(2911)  -197219.3     1040.9
+  CGOPT     402  1.755e+01  7  gpos_max(2911)  -197219.4     1043.5
+  CGOPT     403  1.628e+01  7      grvecs_rms  -197219.4     1046.0
+  CGOPT     404  1.358e+01  7      grvecs_rms  -197219.5     1048.5
+  CGOPT     405  2.350e+01  7      grvecs_rms  -197219.5     1051.0
+  CGOPT     406  2.102e+01  7      grvecs_rms  -197219.5     1053.6
+  CGOPT     407  2.286e+01  7      grvecs_rms  -197219.6     1056.1
+  CGOPT     408  3.464e+01  7      grvecs_rms  -197219.6     1058.6
+  CGOPT     409  1.589e+01  7      grvecs_rms  -197219.7     1061.2
+  CGOPT     410  2.233e+01  7      grvecs_rms  -197219.7     1063.7
+  CGOPT     411  2.723e+01  7      grvecs_rms  -197219.8     1066.2
+  CGOPT     412  2.018e+01  7   gpos_max(135)  -197219.8     1068.8
+  CGOPT     413  2.144e+01  7      grvecs_rms  -197219.9     1071.3
+  CGOPT     414  1.891e+01  7      grvecs_rms  -197219.9     1073.8
+  CGOPT     415  1.210e+01  7   gpos_max(135)  -197219.9     1076.4
+  CGOPT     416  2.018e+01  7      grvecs_rms  -197220.0     1078.9
+  CGOPT     417  1.765e+01  6      grvecs_rms  -197220.0     1081.4
+  CGOPT     418  2.800e+01  7      grvecs_rms  -197220.1     1084.0
+  CGOPT     419  1.764e+01  7      grvecs_rms  -197220.1     1086.5
+  CGOPT     420  3.364e+01  6      grvecs_rms  -197220.2     1089.0
+  CGOPT     421  3.103e+01  6      grvecs_rms  -197220.2     1091.6
+  CGOPT     422  3.263e+01  6      grvecs_rms  -197220.2     1094.1
+  CGOPT     423  2.696e+01  6      grvecs_rms  -197220.3     1096.6
+  CGOPT     424  2.203e+01  6      grvecs_rms  -197220.3     1099.1
+  CGOPT     425  3.116e+01  6      grvecs_rms  -197220.4     1101.7
+  CGOPT     426  1.666e+01  6      grvecs_rms  -197220.4     1104.2
+  CGOPT     427  3.286e+01  6      grvecs_rms  -197220.5     1106.7
+  CGOPT     428  1.466e+01  6      grvecs_rms  -197220.5     1109.3
+  CGOPT     429  2.864e+01  7      grvecs_rms  -197220.5     1111.8
+  CGOPT     430  1.551e+01  7  gpos_max(2119)  -197220.6     1114.3
+  CGOPT     431  3.056e+01  7      grvecs_rms  -197220.6     1116.9
+  CGOPT     432  2.767e+01  7      grvecs_rms  -197220.7     1119.4
+  CGOPT     433  2.750e+01  7      grvecs_rms  -197220.7     1121.9
+  CGOPT     434  2.716e+01  7      grvecs_rms  -197220.8     1124.5
+  CGOPT     435  1.271e+01  7   gpos_max(612)  -197220.8     1127.0
+  CGOPT     436  3.434e+01  7      grvecs_rms  -197220.8     1129.5
+  CGOPT     437  1.896e+01  7      grvecs_rms  -197220.9     1132.0
+  CGOPT     438  3.530e+01  7      grvecs_rms  -197220.9     1134.6
+  CGOPT     439  1.421e+01  7      grvecs_rms  -197221.0     1137.1
+  CGOPT     440  3.459e+01  7      grvecs_rms  -197221.0     1139.6
+  CGOPT     441  1.807e+01  6  gpos_max(2911)  -197221.1     1142.2
+  CGOPT     442  3.350e+01  6      grvecs_rms  -197221.1     1144.7
+  CGOPT     443  2.447e+01  6      grvecs_rms  -197221.1     1147.2
+  CGOPT     444  3.125e+01  6      grvecs_rms  -197221.2     1149.8
+  CGOPT     445  2.083e+01  6      grvecs_rms  -197221.2     1152.3
+  CGOPT     446  2.210e+01  6      grvecs_rms  -197221.2     1154.8
+  CGOPT     447  3.102e+01  6      grvecs_rms  -197221.3     1157.4
+  CGOPT     448  2.478e+01  7      grvecs_rms  -197221.3     1159.9
+  CGOPT     449  2.022e+01  6  gpos_max(2858)  -197221.4     1162.5
+  CGOPT     450  3.366e+01  7      grvecs_rms  -197221.4     1165.0
+  CGOPT     451  2.154e+01  6      grvecs_rms  -197221.4     1167.5
+  CGOPT     452  2.190e+01  7  gpos_max(2911)  -197221.5     1170.1
+  CGOPT     453  2.223e+01  7      grvecs_rms  -197221.5     1172.6
+  CGOPT     454  1.962e+01  7  gpos_max(2911)  -197221.5     1175.2
+  CGOPT     455  3.616e+01  7      grvecs_rms  -197221.6     1177.7
+  CGOPT     456  1.445e+01  7  gpos_max(2911)  -197221.6     1180.3
+  CGOPT     457  3.175e+01  7      grvecs_rms  -197221.7     1182.9
+  CGOPT     458  1.429e+01  7  gpos_max(2911)  -197221.7     1185.4
+  CGOPT     459  2.979e+01  7      grvecs_rms  -197221.7     1188.0
+  CGOPT     460  1.900e+01  7  gpos_max(2911)  -197221.8     1190.5
+  CGOPT     461  2.843e+01  7      grvecs_rms  -197221.8     1193.1
+  CGOPT     462  2.401e+01  7  gpos_max(2911)  -197221.8     1195.6
+  CGOPT     463  2.374e+01  7      grvecs_rms  -197221.9     1198.2
+  CGOPT     464  2.230e+01  7      grvecs_rms  -197221.9     1200.8
+  CGOPT     465  1.983e+01  7      grvecs_rms  -197222.0     1203.3
+  CGOPT     466  2.066e+01  7      grvecs_rms  -197222.0     1205.9
+  CGOPT     467  2.510e+01  7      grvecs_rms  -197222.0     1208.4
+  CGOPT     468  3.199e+01  7      grvecs_rms  -197222.1     1211.0
+  CGOPT     469  1.655e+01  7  gpos_max(2858)  -197222.1     1213.5
+  CGOPT     470  2.610e+01  7      grvecs_rms  -197222.1     1216.0
+  CGOPT     471  1.594e+01  7  gpos_max(2911)  -197222.2     1218.6
+  CGOPT     472  2.388e+01  7      grvecs_rms  -197222.2     1221.1
+  CGOPT     473  1.183e+01  7  gpos_max(2911)  -197222.2     1223.7
+  CGOPT     474  2.557e+01  7      grvecs_rms  -197222.3     1226.2
+  CGOPT     475  1.777e+01  7      grvecs_rms  -197222.3     1228.7
+  CGOPT     476  1.129e+01  7      grvecs_rms  -197222.3     1231.3
+  CGOPT     477  2.408e+01  7      grvecs_rms  -197222.4     1233.8
+  CGOPT     478  1.470e+01  7      grvecs_rms  -197222.4     1236.4
+  CGOPT     479  1.707e+01  7      grvecs_rms  -197222.4     1238.9
+  CGOPT     480  1.160e+01  7   gpos_max(135)  -197222.5     1241.5
+  CGOPT     481  2.091e+01  7      grvecs_rms  -197222.5     1244.1
+  CGOPT     482  1.513e+01  7   gpos_max(135)  -197222.5     1246.6
+  CGOPT     483  2.167e+01  7      grvecs_rms  -197222.6     1249.1
+  CGOPT     484  1.204e+01  7      grvecs_rms  -197222.6     1251.7
+  CGOPT     485  2.055e+01  7      grvecs_rms  -197222.6     1254.2
+  CGOPT     486  1.514e+01  7      grvecs_rms  -197222.7     1256.8
+  CGOPT     487  1.598e+01  7      grvecs_rms  -197222.7     1259.3
+  CGOPT     488  2.351e+01  7      grvecs_rms  -197222.7     1261.8
+  CGOPT     489  2.902e+01  7      grvecs_rms  -197222.8     1264.4
+  CGOPT     490  2.419e+01  7      grvecs_rms  -197222.8     1266.9
+  CGOPT     491  1.660e+01  7  gpos_max(2119)  -197222.8     1269.5
+  CGOPT     492  2.658e+01  7      grvecs_rms  -197222.9     1272.0
+  CGOPT     493  2.107e+01  7      grvecs_rms  -197222.9     1274.6
+  CGOPT     494  1.552e+01  7      grvecs_rms  -197222.9     1277.1
+  CGOPT     495  9.853e+00  7  gpos_max(2078)  -197223.0     1279.7
+  CGOPT     496  2.218e+01  7      grvecs_rms  -197223.0     1282.2
+  CGOPT     497  1.177e+01  7      grvecs_rms  -197223.0     1284.8
+  CGOPT     498  1.729e+01  7      grvecs_rms  -197223.1     1287.4
+  CGOPT     499  1.140e+01  7  gpos_max(2119)  -197223.1     1290.0
+  CGOPT     500  1.437e+01  7      grvecs_rms  -197223.1     1292.5
+  CGOPT     501  1.488e+01  7  gpos_max(2119)  -197223.2     1295.1
+  CGOPT     502  1.370e+01  6  gpos_max(2119)  -197223.2     1297.6
+  CGOPT     503  2.264e+01  7      grvecs_rms  -197223.2     1300.2
+  CGOPT     504  1.602e+01  7      grvecs_rms  -197223.3     1302.8
+  CGOPT     505  1.884e+01  6      grvecs_rms  -197223.3     1305.3
+  CGOPT     506  2.051e+01  7      grvecs_rms  -197223.3     1307.9
+  CGOPT     507  1.491e+01  6      grvecs_rms  -197223.4     1310.4
+  CGOPT     508  1.153e+01  7      grvecs_rms  -197223.4     1313.0
+  CGOPT     509  1.431e+01  6      grvecs_rms  -197223.4     1315.5
+  CGOPT     510  1.692e+01  7  gpos_max(2911)  -197223.5     1318.1
+  CGOPT     511  1.980e+01  7  gpos_max(2858)  -197223.5     1320.7
+  CGOPT     512  1.731e+01  7  gpos_max(2911)  -197223.5     1323.2
+  CGOPT     513  1.462e+01  7  gpos_max(2911)  -197223.6     1325.8
+  CGOPT     514  1.228e+01  7      grvecs_rms  -197223.6     1328.3
+  CGOPT     515  1.391e+01  7      grvecs_rms  -197223.6     1330.9
+  CGOPT     516  1.974e+01  7      grvecs_rms  -197223.7     1333.4
+  CGOPT     517  1.624e+01  7      grvecs_rms  -197223.7     1336.0
+  CGOPT     518  1.265e+01  7  gpos_max(2858)  -197223.7     1338.5
+  CGOPT     519  2.004e+01  7      grvecs_rms  -197223.7     1341.1
+  CGOPT     520  1.645e+01  7  gpos_max(2911)  -197223.8     1343.6
+  CGOPT     521  1.708e+01  7  gpos_max(2911)  -197223.8     1346.2
+  CGOPT     522  1.881e+01  7  gpos_max(2911)  -197223.8     1348.8
+  CGOPT     523  1.789e+01  7  gpos_max(2911)  -197223.9     1351.3
+  CGOPT     524  1.654e+01  7  gpos_max(2858)  -197223.9     1353.9
+  CGOPT     525  1.225e+01  7  gpos_max(2911)  -197223.9     1356.4
+  CGOPT     526  1.287e+01  6  gpos_max(2911)  -197224.0     1359.0
+  CGOPT     527  1.406e+01  6  gpos_max(2858)  -197224.0     1361.5
+  CGOPT     528  1.546e+01  6      grvecs_rms  -197224.0     1364.1
+  CGOPT     529  1.592e+01  6  gpos_max(2911)  -197224.1     1366.6
+  CGOPT     530  2.334e+01  6      grvecs_rms  -197224.1     1369.2
+  CGOPT     531  2.200e+01  6  gpos_max(2911)  -197224.1     1371.7
+  CGOPT     532  1.978e+01  6  gpos_max(2911)  -197224.2     1374.3
+  CGOPT     533  2.025e+01  6      grvecs_rms  -197224.2     1376.9
+  CGOPT     534  1.448e+01  6  gpos_max(2858)  -197224.2     1379.4
+  CGOPT     535  2.038e+01  6      grvecs_rms  -197224.3     1382.0
+  CGOPT     536  1.232e+01  6  gpos_max(2911)  -197224.3     1384.5
+  CGOPT     537  1.359e+01  6      grvecs_rms  -197224.3     1387.1
+  CGOPT     538  1.344e+01  6  gpos_max(2858)  -197224.4     1389.6
+  CGOPT     539  1.495e+01  6  gpos_max(2911)  -197224.4     1392.2
+  CGOPT     540  1.784e+01  6  gpos_max(2911)  -197224.4     1394.7
+  CGOPT     541  1.704e+01  6  gpos_max(2858)  -197224.5     1397.3
+  CGOPT     542  1.814e+01  6  gpos_max(2911)  -197224.5     1399.8
+  CGOPT     543  1.473e+01  6  gpos_max(2858)  -197224.5     1402.4
+  CGOPT     544  2.626e+01  6      grvecs_rms  -197224.6     1405.0
+  CGOPT     545  1.186e+01  6      grvecs_rms  -197224.6     1407.5
+  CGOPT     546  2.110e+01  6      grvecs_rms  -197224.6     1410.1
+  CGOPT     547  1.967e+01  6      grvecs_rms  -197224.6     1412.6
+  CGOPT     548  1.421e+01  6      grvecs_rms  -197224.7     1415.2
+  CGOPT     549  1.487e+01  6      grvecs_rms  -197224.7     1417.7
+  CGOPT     550  1.258e+01  6  gpos_max(2078)  -197224.7     1420.3
+  CGOPT     551  1.446e+01  6      grvecs_rms  -197224.8     1422.8
+  CGOPT     552  1.487e+01  6  gpos_max(2119)  -197224.8     1425.4
+  CGOPT     553  1.451e+01  6  gpos_max(2078)  -197224.8     1428.0
+  CGOPT     554  1.239e+01  6      grvecs_rms  -197224.8     1430.5
+  CGOPT     555  1.409e+01  6      grvecs_rms  -197224.9     1433.1
+  CGOPT     556  1.052e+01  6      grvecs_rms  -197224.9     1435.7
+  CGOPT     557  1.571e+01  6      grvecs_rms  -197224.9     1438.2
+  CGOPT     558  2.097e+01  6      grvecs_rms  -197225.0     1440.8
+  CGOPT     559  1.344e+01  6      grvecs_rms  -197225.0     1443.4
+  CGOPT     560  1.558e+01  6      grvecs_rms  -197225.0     1445.9
+  CGOPT     561  2.112e+01  6      grvecs_rms  -197225.0     1448.5
+  CGOPT     562  1.471e+01  6      grvecs_rms  -197225.1     1451.1
+  CGOPT     563  1.795e+01  6      grvecs_rms  -197225.1     1453.6
+  CGOPT     564  1.160e+01  6  gpos_max(2119)  -197225.1     1456.2
+  CGOPT     565  1.151e+01  6  gpos_max(2119)  -197225.2     1458.7
+  CGOPT     566  1.829e+01  6      grvecs_rms  -197225.2     1461.3
+  CGOPT     567  1.081e+01  6      grvecs_rms  -197225.2     1463.8
+  CGOPT     568  1.934e+01  6      grvecs_rms  -197225.2     1466.4
+  CGOPT     569  1.477e+01  6      grvecs_rms  -197225.3     1469.0
+  CGOPT     570  1.526e+01  6  gpos_max(2119)  -197225.3     1471.5
+  CGOPT     571  1.626e+01  6      grvecs_rms  -197225.3     1474.1
+  CGOPT     572  2.573e+01  6      grvecs_rms  -197225.4     1476.7
+  CGOPT     573  1.656e+01  6  gpos_max(2119)  -197225.4     1479.2
+  CGOPT     574  1.466e+01  6      grvecs_rms  -197225.4     1481.8
+  CGOPT     575  1.931e+01  6      grvecs_rms  -197225.4     1484.4
+  CGOPT     576  9.960e+00  6  gpos_max(2119)  -197225.5     1486.9
+  CGOPT     577  2.123e+01  6      grvecs_rms  -197225.5     1489.3
+  CGOPT     578  1.521e+01  6      grvecs_rms  -197225.5     1491.8
+  CGOPT     579  1.340e+01  6      grvecs_rms  -197225.5     1494.3
+  CGOPT     580  1.726e+01  6      grvecs_rms  -197225.6     1496.7
+  CGOPT     581  1.526e+01  6  gpos_max(2119)  -197225.6     1499.2
+  CGOPT     582  1.421e+01  6  gpos_max(2119)  -197225.6     1501.7
+  CGOPT     583  1.425e+01  6  gpos_max(2119)  -197225.6     1504.1
+  CGOPT     584  1.457e+01  6      grvecs_rms  -197225.7     1506.6
+  CGOPT     585  1.457e+01  6      grvecs_rms  -197225.7     1509.1
+  CGOPT     586  2.301e+01  6      grvecs_rms  -197225.7     1511.6
+  CGOPT     587  1.608e+01  6      grvecs_rms  -197225.7     1514.0
+  CGOPT     588  1.136e+01  6      grvecs_rms  -197225.8     1516.5
+  CGOPT     589  2.052e+01  6      grvecs_rms  -197225.8     1519.0
+  CGOPT     590  1.138e+01  6      grvecs_rms  -197225.8     1521.4
+  CGOPT     591  1.612e+01  6  gpos_max(2911)  -197225.8     1523.9
+  CGOPT     592  1.830e+01  6  gpos_max(2858)  -197225.9     1526.4
+  CGOPT     593  1.648e+01  6  gpos_max(2911)  -197225.9     1528.8
+  CGOPT     594  1.622e+01  6      grvecs_rms  -197225.9     1531.3
+  CGOPT     595  1.600e+01  6      grvecs_rms  -197226.0     1533.8
+  CGOPT     596  1.275e+01  6      grvecs_rms  -197226.0     1536.3
+  CGOPT     597  1.318e+01  6      grvecs_rms  -197226.0     1538.7
+  CGOPT     598  1.581e+01  6      grvecs_rms  -197226.0     1541.2
+  CGOPT     599  1.164e+01  6  gpos_max(2858)  -197226.1     1543.7
+  CGOPT     600  2.214e+01  6      grvecs_rms  -197226.1     1546.1
+  CGOPT     601  1.518e+01  6  gpos_max(2911)  -197226.1     1548.6
+  CGOPT     602  1.556e+01  6  gpos_max(2911)  -197226.1     1551.1
+  CGOPT     603  1.652e+01  6      grvecs_rms  -197226.2     1553.6
+  CGOPT     604  1.176e+01  7  gpos_max(2911)  -197226.2     1556.0
+  CGOPT     605  9.641e+00  7  gpos_max(2858)  -197226.2     1558.5
+  CGOPT     606  7.641e+00  6      grvecs_rms  -197226.2     1561.0
+  CGOPT     607  1.036e+01  7      grvecs_rms  -197226.3     1563.4
+  CGOPT     608  1.472e+01  7      grvecs_rms  -197226.3     1565.9
+  CGOPT     609  1.340e+01  7      grvecs_rms  -197226.3     1568.4
+  CGOPT     610  1.179e+01  7      grvecs_rms  -197226.3     1570.8
+  CGOPT     611  9.572e+00  7    gpos_max(10)  -197226.4     1573.3
+  CGOPT     612  1.218e+01  7      grvecs_rms  -197226.4     1575.8
+  CGOPT     613  2.051e+01  6      grvecs_rms  -197226.4     1578.3
+  CGOPT     614  1.380e+01  7      grvecs_rms  -197226.4     1580.7
+  CGOPT     615  2.108e+01  7      grvecs_rms  -197226.5     1583.2
+  CGOPT     616  1.475e+01  7      grvecs_rms  -197226.5     1585.7
+  CGOPT     617  1.575e+01  7      grvecs_rms  -197226.5     1588.1
+  CGOPT     618  1.794e+01  7      grvecs_rms  -197226.6     1590.6
+  CGOPT     619  1.332e+01  7      grvecs_rms  -197226.6     1593.1
+  CGOPT     620  1.368e+01  7      grvecs_rms  -197226.6     1595.5
+  CGOPT     621  1.424e+01  7  gpos_max(2119)  -197226.6     1598.0
+  CGOPT     622  1.524e+01  7  gpos_max(2078)  -197226.7     1600.5
+  CGOPT     623  1.489e+01  7  gpos_max(2119)  -197226.7     1602.9
+  CGOPT     624  1.931e+01  7      grvecs_rms  -197226.7     1605.4
+  CGOPT     625  1.566e+01  7      grvecs_rms  -197226.7     1607.9
+  CGOPT     626  1.132e+01  7      grvecs_rms  -197226.8     1610.3
+  CGOPT     627  2.256e+01  7      grvecs_rms  -197226.8     1612.8
+  CGOPT     628  1.589e+01  7      grvecs_rms  -197226.8     1615.3
+  CGOPT     629  1.414e+01  7      grvecs_rms  -197226.8     1617.7
+  CGOPT     630  1.411e+01  7  gpos_max(2119)  -197226.8     1620.2
+  CGOPT     631  1.653e+01  7      grvecs_rms  -197226.9     1622.7
+  CGOPT     632  1.971e+01  7  gpos_max(2119)  -197226.9     1625.1
+  CGOPT     633  1.860e+01  7  gpos_max(2119)  -197226.9     1627.6
+  CGOPT     634  1.869e+01  7  gpos_max(2119)  -197226.9     1630.1
+  CGOPT     635  1.527e+01  7  gpos_max(2119)  -197227.0     1632.5
+  CGOPT     636  1.703e+01  7      grvecs_rms  -197227.0     1635.0
+  CGOPT     637  1.076e+01  7      grvecs_rms  -197227.0     1637.5
+  CGOPT     638  1.393e+01  7      grvecs_rms  -197227.0     1639.9
+  CGOPT     639  1.050e+01  7  gpos_max(2119)  -197227.1     1642.4
+  CGOPT     640  1.597e+01  7      grvecs_rms  -197227.1     1644.9
+  CGOPT     641  1.647e+01  7  gpos_max(2119)  -197227.1     1647.3
+  CGOPT     642  2.400e+01  7      grvecs_rms  -197227.1     1649.8
+  CGOPT     643  1.613e+01  7  gpos_max(2078)  -197227.2     1652.3
+  CGOPT     644  1.832e+01  7  gpos_max(2119)  -197227.2     1654.8
+  CGOPT     645  1.871e+01  7      grvecs_rms  -197227.2     1657.2
+  CGOPT     646  1.011e+01  7  gpos_max(2078)  -197227.2     1659.7
+  CGOPT     647  1.441e+01  7      grvecs_rms  -197227.3     1662.2
+  CGOPT     648  1.192e+01  7      grvecs_rms  -197227.3     1664.6
+  CGOPT     649  1.034e+01  7  gpos_max(2119)  -197227.3     1667.1
+  CGOPT     650  1.648e+01  7      grvecs_rms  -197227.3     1669.6
+  CGOPT     651  1.420e+01  7      grvecs_rms  -197227.4     1672.0
+  CGOPT     652  1.350e+01  7  gpos_max(2119)  -197227.4     1674.5
+  CGOPT     653  1.609e+01  7      grvecs_rms  -197227.4     1677.0
+  CGOPT     654  1.619e+01  7      grvecs_rms  -197227.4     1679.4
+  CGOPT     655  1.624e+01  7      grvecs_rms  -197227.4     1681.9
+  CGOPT     656  1.843e+01  7      grvecs_rms  -197227.5     1684.4
+  CGOPT     657  1.783e+01  7      grvecs_rms  -197227.5     1686.8
+  CGOPT     658  1.102e+01  7      grvecs_rms  -197227.5     1689.3
+  CGOPT     659  1.808e+01  7      grvecs_rms  -197227.5     1691.8
+  CGOPT     660  9.345e+00  7      grvecs_rms  -197227.6     1694.2
+  CGOPT     661  1.602e+01  7      grvecs_rms  -197227.6     1696.7
+  CGOPT     662  1.195e+01  6      grvecs_rms  -197227.6     1699.2
+  CGOPT     663  1.392e+01  6      grvecs_rms  -197227.6     1701.6
+  CGOPT     664  1.693e+01  6      grvecs_rms  -197227.7     1704.1
+  CGOPT     665  1.348e+01  6      grvecs_rms  -197227.7     1706.6
+  CGOPT     666  2.285e+01  6      grvecs_rms  -197227.7     1709.0
+  CGOPT     667  1.268e+01  6      grvecs_rms  -197227.7     1711.5
+  CGOPT     668  2.180e+01  6      grvecs_rms  -197227.8     1714.0
+  CGOPT     669  2.172e+01  6      grvecs_rms  -197227.8     1716.5
+  CGOPT     670  1.551e+01  6      grvecs_rms  -197227.8     1718.9
+  CGOPT     671  1.388e+01  6      grvecs_rms  -197227.8     1721.4
+  CGOPT     672  2.499e+01  6      grvecs_rms  -197227.9     1723.9
+  CGOPT     673  1.075e+01  6  gpos_max(2897)  -197227.9     1726.3
+  CGOPT     674  1.863e+01  6      grvecs_rms  -197227.9     1728.8
+  CGOPT     675  1.047e+01  6  gpos_max(2897)  -197227.9     1731.3
+  CGOPT     676  1.307e+01  6      grvecs_rms  -197228.0     1733.7
+  CGOPT     677  8.423e+00  6      grvecs_rms  -197228.0     1736.2
+  CGOPT     678  1.147e+01  6      grvecs_rms  -197228.0     1738.7
+  CGOPT     679  1.017e+01  6      grvecs_rms  -197228.0     1741.1
+  CGOPT     680  1.382e+01  6      grvecs_rms  -197228.0     1743.6
+  CGOPT     681  1.274e+01  6      grvecs_rms  -197228.1     1746.1
+  CGOPT     682  1.378e+01  6      grvecs_rms  -197228.1     1748.5
+  CGOPT     683  2.501e+01  6      grvecs_rms  -197228.1     1751.0
+  CGOPT     684  1.555e+01  6      grvecs_rms  -197228.1     1753.5
+  CGOPT     685  1.457e+01  7      grvecs_rms  -197228.2     1755.9
+  CGOPT     686  1.740e+01  7      grvecs_rms  -197228.2     1758.4
+  CGOPT     687  1.353e+01  7      grvecs_rms  -197228.2     1760.9
+  CGOPT     688  1.632e+01  7      grvecs_rms  -197228.2     1763.3
+  CGOPT     689  1.149e+01  7      grvecs_rms  -197228.2     1765.8
+  CGOPT     690  1.355e+01  7      grvecs_rms  -197228.3     1768.3
+  CGOPT     691  1.199e+01  7  gpos_max(2078)  -197228.3     1770.7
+  CGOPT     692  1.545e+01  7      grvecs_rms  -197228.3     1773.2
+  CGOPT     693  1.667e+01  7  gpos_max(2119)  -197228.3     1775.7
+  CGOPT     694  1.992e+01  7      grvecs_rms  -197228.4     1778.1
+  CGOPT     695  1.470e+01  7  gpos_max(2119)  -197228.4     1780.6
+  CGOPT     696  1.333e+01  7  gpos_max(2078)  -197228.4     1783.1
+  CGOPT     697  2.037e+01  7      grvecs_rms  -197228.4     1785.6
+  CGOPT     698  1.487e+01  7      grvecs_rms  -197228.4     1788.0
+  CGOPT     699  1.657e+01  7      grvecs_rms  -197228.5     1790.5
+  CGOPT     700  1.256e+01  7      grvecs_rms  -197228.5     1793.0
+  CGOPT     701  1.986e+01  7      grvecs_rms  -197228.5     1795.4
+  CGOPT     702  1.513e+01  7  gpos_max(2119)  -197228.5     1797.9
+  CGOPT     703  1.876e+01  7  gpos_max(2078)  -197228.5     1800.4
+  CGOPT     704  2.125e+01  7  gpos_max(2119)  -197228.6     1802.8
+  CGOPT     705  1.794e+01  7  gpos_max(2119)  -197228.6     1805.3
+  CGOPT     706  1.352e+01  7  gpos_max(2078)  -197228.6     1807.8
+  CGOPT     707  1.181e+01  7  gpos_max(2119)  -197228.6     1810.2
+  CGOPT     708  1.465e+01  7      grvecs_rms  -197228.7     1812.7
+  CGOPT     709  1.131e+01  7      grvecs_rms  -197228.7     1815.2
+  CGOPT     710  1.436e+01  7      grvecs_rms  -197228.7     1817.6
+  CGOPT     711  1.491e+01  7      grvecs_rms  -197228.7     1820.1
+  CGOPT     712  1.685e+01  7      grvecs_rms  -197228.7     1822.6
+  CGOPT     713  1.717e+01  7  gpos_max(2119)  -197228.8     1825.0
+  CGOPT     714  2.072e+01  7      grvecs_rms  -197228.8     1827.5
+  CGOPT     715  1.469e+01  7  gpos_max(2119)  -197228.8     1830.0
+  CGOPT     716  1.846e+01  7      grvecs_rms  -197228.8     1832.4
+  CGOPT     717  1.211e+01  7  gpos_max(2119)  -197228.8     1834.9
+  CGOPT     718  1.358e+01  7      grvecs_rms  -197228.8     1837.4
+  CGOPT     719  9.467e+00  7      grvecs_rms  -197228.9     1839.9
+  CGOPT     720  1.871e+01  7      grvecs_rms  -197228.9     1842.4
+  CGOPT     721  8.035e+00  7  gpos_max(2119)  -197228.9     1844.9
+  CGOPT     722  1.405e+01  8      grvecs_rms  -197228.9     1847.4
+  CGOPT     723  1.488e+01  8      grvecs_rms  -197228.9     1849.9
+  CGOPT     724  2.163e+01  8      grvecs_rms  -197229.0     1852.4
+  CGOPT     725  2.748e+01  8      grvecs_rms  -197229.0     1854.9
+  CGOPT     726  1.622e+01  8      grvecs_rms  -197229.0     1857.4
+  CGOPT     727  1.953e+01  8      grvecs_rms  -197229.0     1859.8
+  CGOPT     728  2.071e+01  8      grvecs_rms  -197229.0     1862.3
+  CGOPT     729  1.501e+01  8      grvecs_rms  -197229.1     1864.8
+  CGOPT     730  2.201e+01  8      grvecs_rms  -197229.1     1867.3
+  CGOPT     731  2.437e+01  8      grvecs_rms  -197229.1     1869.8
+  CGOPT     732  1.375e+01  8      grvecs_rms  -197229.1     1872.3
+  CGOPT     733  1.738e+01  8      grvecs_rms  -197229.1     1874.8
+  CGOPT     734  1.086e+01  8  gpos_max(2911)  -197229.2     1877.2
+  CGOPT     735  2.002e+01  8      grvecs_rms  -197229.2     1879.7
+  CGOPT     736  1.428e+01  8      grvecs_rms  -197229.2     1882.2
+  CGOPT     737  1.626e+01  8      grvecs_rms  -197229.2     1884.7
+  CGOPT     738  1.598e+01  8      grvecs_rms  -197229.2     1887.2
+  CGOPT     739  2.413e+01  8      grvecs_rms  -197229.3     1889.7
+  CGOPT     740  1.533e+01  8      grvecs_rms  -197229.3     1892.2
+  CGOPT     741  1.499e+01  8      grvecs_rms  -197229.3     1894.6
+  CGOPT     742  1.694e+01  8      grvecs_rms  -197229.3     1897.1
+  CGOPT     743  1.542e+01  8      grvecs_rms  -197229.3     1899.6
+  CGOPT     744  1.487e+01  8      grvecs_rms  -197229.4     1902.1
+  CGOPT     745  1.424e+01  7  gpos_max(2911)  -197229.4     1904.6
+  CGOPT     746  1.906e+01  7      grvecs_rms  -197229.4     1907.1
+  CGOPT     747  1.148e+01  7  gpos_max(2911)  -197229.4     1909.6
+  CGOPT     748  1.998e+01  7      grvecs_rms  -197229.4     1912.0
+  CGOPT     749  1.103e+01  7      grvecs_rms  -197229.5     1914.5
+  CGOPT     750  2.128e+01  7      grvecs_rms  -197229.5     1917.0
+  CGOPT     751  1.235e+01  7      grvecs_rms  -197229.5     1919.5
+  CGOPT     752  1.535e+01  7      grvecs_rms  -197229.5     1922.0
+  CGOPT     753  2.033e+01  7      grvecs_rms  -197229.5     1924.5
+  CGOPT     754  1.661e+01  7      grvecs_rms  -197229.6     1927.0
+  CGOPT     755  1.411e+01  7  gpos_max(2911)  -197229.6     1929.4
+  CGOPT     756  1.692e+01  7      grvecs_rms  -197229.6     1931.9
+  CGOPT     757  1.502e+01  7      grvecs_rms  -197229.6     1934.4
+  CGOPT     758  1.552e+01  7      grvecs_rms  -197229.6     1936.9
+  CGOPT     759  1.687e+01  7      grvecs_rms  -197229.6     1939.4
+  CGOPT     760  1.143e+01  7      grvecs_rms  -197229.7     1941.9
+  CGOPT     761  2.046e+01  7      grvecs_rms  -197229.7     1944.4
+  CGOPT     762  1.016e+01  7      grvecs_rms  -197229.7     1946.8
+  CGOPT     763  1.820e+01  7      grvecs_rms  -197229.7     1949.3
+  CGOPT     764  1.185e+01  7      grvecs_rms  -197229.7     1951.8
+  CGOPT     765  1.766e+01  6      grvecs_rms  -197229.8     1954.3
+  CGOPT     766  1.269e+01  6      grvecs_rms  -197229.8     1956.8
+  CGOPT     767  2.038e+01  6      grvecs_rms  -197229.8     1959.3
+  CGOPT     768  1.469e+01  6      grvecs_rms  -197229.8     1961.8
+  CGOPT     769  1.780e+01  6      grvecs_rms  -197229.8     1964.3
+  CGOPT     770  1.763e+01  6      grvecs_rms  -197229.8     1966.8
+  CGOPT     771  1.141e+01  6      grvecs_rms  -197229.9     1969.3
+  CGOPT     772  1.755e+01  6      grvecs_rms  -197229.9     1971.8
+  CGOPT     773  1.258e+01  6  gpos_max(2119)  -197229.9     1974.3
+  CGOPT     774  1.581e+01  6  gpos_max(2119)  -197229.9     1976.8
+  CGOPT     775  1.585e+01  6  gpos_max(2119)  -197229.9     1979.3
+  CGOPT     776  1.405e+01  6      grvecs_rms  -197229.9     1981.8
+  CGOPT     777  1.075e+01  6  gpos_max(2119)  -197230.0     1984.3
+  CGOPT     778  1.461e+01  6      grvecs_rms  -197230.0     1986.8
+  CGOPT     779  9.111e+00  6      grvecs_rms  -197230.0     1989.3
+  CGOPT     780  1.611e+01  6      grvecs_rms  -197230.0     1991.8
+  CGOPT     781  1.633e+01  6      grvecs_rms  -197230.0     1994.3
+  CGOPT     782  1.366e+01  6      grvecs_rms  -197230.0     1996.8
+  CGOPT     783  9.315e+00  6      grvecs_rms  -197230.1     1999.3
+  CGOPT     784  1.483e+01  6      grvecs_rms  -197230.1     2001.8
+  CGOPT     785  1.132e+01  6  gpos_max(2078)  -197230.1     2004.3
+  CGOPT     786  1.108e+01  6      grvecs_rms  -197230.1     2006.8
+  CGOPT     787  1.504e+01  6      grvecs_rms  -197230.1     2009.3
+  CGOPT     788  8.162e+00  6      grvecs_rms  -197230.1     2011.8
+  CGOPT     789  1.419e+01  6      grvecs_rms  -197230.1     2014.3
+  CGOPT     790  8.514e+00  6      grvecs_rms  -197230.2     2016.8
+  CGOPT     791  1.423e+01  6      grvecs_rms  -197230.2     2019.3
+  CGOPT     792  8.176e+00  6      grvecs_rms  -197230.2     2021.8
+  CGOPT     793  1.271e+01  6      grvecs_rms  -197230.2     2024.3
+  CGOPT     794  1.523e+01  6      grvecs_rms  -197230.2     2026.8
+  CGOPT     795  1.344e+01  6      grvecs_rms  -197230.2     2029.3
+  CGOPT     796  1.520e+01  6      grvecs_rms  -197230.2     2031.8
+  CGOPT     797  8.492e+00  7      grvecs_rms  -197230.3     2034.3
+  CGOPT     798  1.945e+01  7      grvecs_rms  -197230.3     2036.8
+  CGOPT     799  5.923e+00  7  gpos_max(2911)  -197230.3     2039.3
+  CGOPT     800  1.645e+01  7      grvecs_rms  -197230.3     2041.8
+  CGOPT     801  6.372e+00  7  gpos_max(2911)  -197230.3     2044.3
+  CGOPT     802  1.150e+01  7      grvecs_rms  -197230.3     2046.7
+  CGOPT     803  1.021e+01  7      grvecs_rms  -197230.3     2049.2
+  CGOPT     804  9.928e+00  7      grvecs_rms  -197230.4     2051.7
+  CGOPT     805  1.308e+01  7      grvecs_rms  -197230.4     2054.2
+  CGOPT     806  1.118e+01  7      grvecs_rms  -197230.4     2056.7
+  CGOPT     807  1.072e+01  7  gpos_max(2858)  -197230.4     2059.2
+  CGOPT     808  1.102e+01  7      grvecs_rms  -197230.4     2061.7
+  CGOPT     809  1.210e+01  7      grvecs_rms  -197230.4     2064.2
+  CGOPT     810  6.555e+00  7      grvecs_rms  -197230.4     2066.7
+  CGOPT     811  9.781e+00  7      grvecs_rms  -197230.4     2069.2
+  CGOPT     812  8.869e+00  7      grvecs_rms  -197230.5     2071.6
+  CGOPT     813  9.580e+00  7  gpos_max(2911)  -197230.5     2074.1
+  CGOPT     814  1.134e+01  7  gpos_max(2858)  -197230.5     2076.6
+  CGOPT     815  1.437e+01  7  gpos_max(2911)  -197230.5     2079.1
+  CGOPT     816  1.262e+01  7  gpos_max(2911)  -197230.5     2081.6
+  CGOPT     817  1.026e+01  7  gpos_max(2858)  -197230.5     2084.1
+  CGOPT     818  7.986e+00  7  gpos_max(2911)  -197230.5     2086.6
+  CGOPT     819  6.942e+00  7      grvecs_rms  -197230.5     2089.1
+  CGOPT     820  1.063e+01  7      grvecs_rms  -197230.5     2091.6
+  CGOPT     821  6.505e+00  7  gpos_max(2911)  -197230.6     2094.1
+  CGOPT     822  1.423e+01  7      grvecs_rms  -197230.6     2096.6
+  CGOPT     823  1.006e+01  7      grvecs_rms  -197230.6     2099.1
+  CGOPT     824  1.044e+01  7      grvecs_rms  -197230.6     2101.6
+  CGOPT     825  9.140e+00  7  gpos_max(2911)  -197230.6     2104.1
+  CGOPT     826  9.182e+00  7  gpos_max(2858)  -197230.6     2106.5
+  CGOPT     827  1.087e+01  7  gpos_max(2911)  -197230.6     2109.0
+  CGOPT     828  9.250e+00  7      grvecs_rms  -197230.6     2111.5
+  CGOPT     829  8.214e+00  6      grvecs_rms  -197230.6     2114.0
+  CGOPT     830  6.507e+00  7      grvecs_rms  -197230.7     2116.5
+  CGOPT     831  1.053e+01  6      grvecs_rms  -197230.7     2119.0
+  CGOPT     832  6.924e+00  7      grvecs_rms  -197230.7     2121.5
+  CGOPT     833  1.242e+01  6      grvecs_rms  -197230.7     2124.0
+  CGOPT     834  8.696e+00  6      grvecs_rms  -197230.7     2126.5
+  CGOPT     835  1.454e+01  6      grvecs_rms  -197230.7     2129.0
+  CGOPT     836  1.265e+01  6      grvecs_rms  -197230.7     2131.5
+  CGOPT     837  1.296e+01  6      grvecs_rms  -197230.7     2133.9
+  CGOPT     838  7.809e+00  6      grvecs_rms  -197230.7     2136.4
+  CGOPT     839  9.903e+00  6      grvecs_rms  -197230.8     2139.0
+  CGOPT     840  8.998e+00  7      grvecs_rms  -197230.8     2141.6
+  CGOPT     841  8.870e+00  6      grvecs_rms  -197230.8     2144.1
+  CGOPT     842  7.662e+00  7      grvecs_rms  -197230.8     2146.7
+  CGOPT     843  9.958e+00  6      grvecs_rms  -197230.8     2149.3
+  CGOPT     844  7.920e+00  6    gpos_max(95)  -197230.8     2151.9
+  CGOPT     845  9.059e+00  6      grvecs_rms  -197230.8     2154.4
+  CGOPT     846  1.169e+01  6      grvecs_rms  -197230.8     2157.0
+  CGOPT     847  1.377e+01  6      grvecs_rms  -197230.8     2159.6
+  CGOPT     848  1.029e+01  5      grvecs_rms  -197230.9     2162.2
+  CGOPT     849  9.265e+00  6      grvecs_rms  -197230.9     2164.8
+  CGOPT     850  1.539e+01  5      grvecs_rms  -197230.9     2167.3
+  CGOPT     851  9.590e+00  7      grvecs_rms  -197230.9     2169.8
+  CGOPT     852  9.647e+00  5      grvecs_rms  -197230.9     2172.4
+  CGOPT     853  8.203e+00  6      grvecs_rms  -197230.9     2175.0
+  CGOPT     854  1.098e+01  6      grvecs_rms  -197230.9     2177.6
+  CGOPT     855  8.600e+00  6    gpos_max(95)  -197230.9     2180.2
+  CGOPT     856  9.791e+00  4   gpos_max(135)  -197230.9     2182.8
+  CGOPT     857  8.598e+00  4   gpos_max(135)  -197230.9     2185.4
+  CGOPT     858  6.702e+00  5    gpos_max(95)  -197231.0     2188.0
+  CGOPT     859  6.295e+00  5      grvecs_rms  -197231.0     2190.6
+  CGOPT     860  5.814e+00  6      grvecs_rms  -197231.0     2193.2
+  CGOPT     861  9.758e+00  6      grvecs_rms  -197231.0     2195.8
+  CGOPT     862  7.913e+00  5      grvecs_rms  -197231.0     2198.4
+  CGOPT     863  7.778e+00  6      grvecs_rms  -197231.0     2200.9
+  CGOPT     864  1.353e+01  5      grvecs_rms  -197231.0     2203.5
+  CGOPT     865  8.807e+00  6      grvecs_rms  -197231.0     2206.1
+  CGOPT     866  1.107e+01  5      grvecs_rms  -197231.0     2208.7
+  CGOPT     867  6.708e+00  6  gpos_max(2911)  -197231.0     2211.3
+  CGOPT     868  6.240e+00  6  gpos_max(2911)  -197231.1     2213.9
+  CGOPT     869  6.642e+00  4      grvecs_rms  -197231.1     2216.5
+  CGOPT     870  7.036e+00  6      grvecs_rms  -197231.1     2219.1
+  CGOPT     871  6.660e+00  6  gpos_max(2911)  -197231.1     2221.6
+  CGOPT     872  7.216e+00  6      grvecs_rms  -197231.1     2224.2
+  CGOPT     873  8.188e+00  4      grvecs_rms  -197231.1     2226.8
+  CGOPT     874  7.324e+00  5  gpos_max(2911)  -197231.1     2229.4
+  CGOPT     875  1.073e+01  4      grvecs_rms  -197231.1     2232.0
+  CGOPT     876  8.965e+00  4  gpos_max(2911)  -197231.1     2234.6
+  CGOPT     877  1.041e+01  4  gpos_max(2911)  -197231.1     2237.2
+  CGOPT     878  1.459e+01  4      grvecs_rms  -197231.1     2239.8
+  CGOPT     879  7.104e+00  4      grvecs_rms  -197231.2     2242.4
+  CGOPT     880  1.043e+01  4      grvecs_rms  -197231.2     2245.0
+  CGOPT     881  8.990e+00  5      grvecs_rms  -197231.2     2247.5
+  CGOPT     882  6.498e+00  5      grvecs_rms  -197231.2     2250.1
+  CGOPT     883  9.875e+00  5      grvecs_rms  -197231.2     2252.7
+  CGOPT     884  8.495e+00  5  gpos_max(2858)  -197231.2     2255.3
+  CGOPT     885  1.140e+01  4  gpos_max(2911)  -197231.2     2257.9
+  CGOPT     886  1.022e+01  4  gpos_max(2911)  -197231.2     2260.5
+  CGOPT     887  8.402e+00  4  gpos_max(2911)  -197231.2     2263.1
+  CGOPT     888  8.808e+00  4  gpos_max(2911)  -197231.2     2265.7
+  CGOPT     889  9.790e+00  4      grvecs_rms  -197231.2     2268.3
+  CGOPT     890  6.551e+00  4      grvecs_rms  -197231.3     2270.9
+  CGOPT     891  7.242e+00  4      grvecs_rms  -197231.3     2273.5
+  CGOPT     892  1.478e+01  5      grvecs_rms  -197231.3     2276.2
+  CGOPT     893  6.978e+00  4      grvecs_rms  -197231.3     2278.8
+  CGOPT     894  9.996e+00  4      grvecs_rms  -197231.3     2281.4
+  CGOPT     895  9.688e+00  4      grvecs_rms  -197231.3     2283.9
+  CGOPT     896  9.155e+00  5      grvecs_rms  -197231.3     2286.4
+  CGOPT     897  8.292e+00  4  gpos_max(2911)  -197231.3     2289.0
+  CGOPT     898  8.077e+00  6      grvecs_rms  -197231.3     2291.6
+  CGOPT     899  7.934e+00  4      grvecs_rms  -197231.3     2294.3
+  CGOPT     900  9.372e+00  6      grvecs_rms  -197231.3     2296.9
+  CGOPT     901  7.721e+00  5      grvecs_rms  -197231.3     2299.5
+  CGOPT     902  5.136e+00  4      grvecs_rms  -197231.4     2302.1
+  CGOPT     903  1.064e+01  6      grvecs_rms  -197231.4     2304.7
+  CGOPT     904  7.865e+00  6      grvecs_rms  -197231.4     2307.3
+  CGOPT     905  6.266e+00  6   gpos_max(135)  -197231.4     2309.9
+  CGOPT     906  1.154e+01  6      grvecs_rms  -197231.4     2312.5
+  CGOPT     907  7.959e+00  6   gpos_max(135)  -197231.4     2315.1
+  CGOPT     908  6.807e+00  6   gpos_max(135)  -197231.4     2317.7
+  CGOPT     909  6.332e+00  6      grvecs_rms  -197231.4     2320.3
+  CGOPT     910  8.697e+00  6      grvecs_rms  -197231.4     2322.9
+  CGOPT     911  6.874e+00  6      grvecs_rms  -197231.4     2325.5
+  CGOPT     912  5.245e+00  6      grvecs_rms  -197231.4     2328.2
+  CGOPT     913  7.560e+00  6      grvecs_rms  -197231.4     2330.8
+  CGOPT     914  5.060e+00  6  gpos_max(2857)  -197231.4     2333.4
+  CGOPT     915  9.876e+00  6      grvecs_rms  -197231.5     2336.0
+  CGOPT     916  6.278e+00  6      grvecs_rms  -197231.5     2338.6
+  CGOPT     917  1.107e+01  5      grvecs_rms  -197231.5     2341.2
+  CGOPT     918  7.407e+00  4      grvecs_rms  -197231.5     2343.8
+  CGOPT     919  8.460e+00  5      grvecs_rms  -197231.5     2346.5
+  CGOPT     920  1.194e+01  5      grvecs_rms  -197231.5     2349.1
+  CGOPT     921  6.435e+00  5      grvecs_rms  -197231.5     2351.7
+  CGOPT     922  6.298e+00  6      grvecs_rms  -197231.5     2354.3
+  CGOPT     923  6.901e+00  5      grvecs_rms  -197231.5     2356.9
+  CGOPT     924  4.794e+00  5  gpos_max(2362)  -197231.5     2359.5
+  CGOPT     925  6.062e+00  5      grvecs_rms  -197231.5     2362.1
+  CGOPT     926  6.585e+00  5  gpos_max(2403)  -197231.5     2364.7
+  CGOPT     927  5.657e+00  5  gpos_max(2403)  -197231.5     2367.3
+  CGOPT     928  5.522e+00  5  gpos_max(2403)  -197231.6     2369.9
+  CGOPT     929  5.693e+00  5      grvecs_rms  -197231.6     2372.5
+  CGOPT     930  7.088e+00  5      grvecs_rms  -197231.6     2375.1
+  CGOPT     931  7.224e+00  5      grvecs_rms  -197231.6     2377.7
+  CGOPT     932  7.521e+00  5      grvecs_rms  -197231.6     2380.3
+  CGOPT     933  5.751e+00  5      grvecs_rms  -197231.6     2382.9
+  CGOPT     934  1.358e+01  5      grvecs_rms  -197231.6     2385.6
+  CGOPT     935  6.313e+00  5      grvecs_rms  -197231.6     2388.1
+  CGOPT     936  8.225e+00  5      grvecs_rms  -197231.6     2390.8
+  CGOPT     937  8.050e+00  5      grvecs_rms  -197231.6     2393.4
+  CGOPT     938  7.367e+00  5  gpos_max(2911)  -197231.6     2395.9
+  CGOPT     939  1.069e+01  5      grvecs_rms  -197231.6     2398.5
+  CGOPT     940  5.854e+00  5  gpos_max(2911)  -197231.6     2401.1
+  CGOPT     941  9.492e+00  5      grvecs_rms  -197231.6     2403.7
+  CGOPT     942  7.065e+00  5      grvecs_rms  -197231.6     2406.2
+  CGOPT     943  6.323e+00  6      grvecs_rms  -197231.7     2408.7
+  CGOPT     944  6.492e+00  5      grvecs_rms  -197231.7     2411.3
+  CGOPT     945  6.644e+00  5      grvecs_rms  -197231.7     2413.8
+  CGOPT     946  8.158e+00  5  gpos_max(2911)  -197231.7     2416.4
+  CGOPT     947  8.611e+00  6  gpos_max(2911)  -197231.7     2419.0
+  CGOPT     948  1.026e+01  5      grvecs_rms  -197231.7     2421.5
+  CGOPT     949  7.005e+00  6  gpos_max(2858)  -197231.7     2424.1
+  CGOPT     950  7.020e+00  6  gpos_max(2911)  -197231.7     2426.7
+  CGOPT     951  8.221e+00  6      grvecs_rms  -197231.7     2429.3
+  CGOPT     952  5.537e+00  5  gpos_max(2911)  -197231.7     2431.8
+  CGOPT     953  8.644e+00  6      grvecs_rms  -197231.7     2434.4
+  CGOPT     954  6.219e+00  5  gpos_max(2911)  -197231.7     2437.0
+  CGOPT     955  6.177e+00  5  gpos_max(2911)  -197231.7     2439.5
+  CGOPT     956  7.258e+00  5  gpos_max(2911)  -197231.7     2442.1
+  CGOPT     957  1.065e+01  5      grvecs_rms  -197231.7     2444.6
+  CGOPT     958  7.413e+00  5  gpos_max(2911)  -197231.8     2447.2
+  CGOPT     959  1.248e+01  5      grvecs_rms  -197231.8     2449.8
+  CGOPT     960  8.040e+00  4      grvecs_rms  -197231.8     2452.3
+  CGOPT     961  8.239e+00  5      grvecs_rms  -197231.8     2454.8
+  CGOPT     962  1.067e+01  5      grvecs_rms  -197231.8     2457.3
+  CGOPT     963  9.624e+00  5      grvecs_rms  -197231.8     2459.8
+  CGOPT     964  7.563e+00  5      grvecs_rms  -197231.8     2462.3
+  CGOPT     965  8.716e+00  5      grvecs_rms  -197231.8     2464.8
+  CGOPT     966  9.668e+00  5      grvecs_rms  -197231.8     2467.3
+  CGOPT     967  7.261e+00  5      grvecs_rms  -197231.8     2469.8
+  CGOPT     968  7.928e+00  5      grvecs_rms  -197231.8     2472.3
+  CGOPT     969  4.893e+00  5  gpos_max(2403)  -197231.8     2474.8
+  CGOPT     970  8.469e+00  4      grvecs_rms  -197231.8     2477.3
+  CGOPT     971  4.739e+00  5      grvecs_rms  -197231.8     2479.8
+  CGOPT     972  8.968e+00  4      grvecs_rms  -197231.8     2482.3
+  CGOPT     973  5.469e+00  4      grvecs_rms  -197231.8     2484.8
+  CGOPT     974  9.484e+00  4      grvecs_rms  -197231.8     2487.3
+  CGOPT     975  6.618e+00  4      grvecs_rms  -197231.8     2489.8
+  CGOPT     976  8.348e+00  4      grvecs_rms  -197231.8     2492.3
+  CGOPT     977  5.002e+00  4      grvecs_rms  -197231.9     2494.8
+  CGOPT     978  8.536e+00  5      grvecs_rms  -197231.9     2497.2
+  CGOPT     979  5.265e+00  4      grvecs_rms  -197231.9     2499.7
+  CGOPT     980  8.855e+00  4      grvecs_rms  -197231.9     2502.2
+  CGOPT     981  6.289e+00  4      grvecs_rms  -197231.9     2504.7
+  CGOPT     982  8.850e+00  4      grvecs_rms  -197231.9     2507.2
+  CGOPT     983  7.576e+00  4      grvecs_rms  -197231.9     2509.7
+  CGOPT     984  7.053e+00  4      grvecs_rms  -197231.9     2512.2
+  CGOPT     985  8.233e+00  4      grvecs_rms  -197231.9     2514.8
+  CGOPT     986  9.220e+00  4      grvecs_rms  -197231.9     2517.4
+  CGOPT     987  7.973e+00  4      grvecs_rms  -197231.9     2519.9
+  CGOPT     988  7.388e+00  4      grvecs_rms  -197231.9     2522.5
+  CGOPT     989  1.198e+01  4      grvecs_rms  -197231.9     2525.1
+  CGOPT     990  6.423e+00  4      grvecs_rms  -197231.9     2527.7
+  CGOPT     991  9.373e+00  4      grvecs_rms  -197231.9     2530.3
+  CGOPT     992  3.120e+00  3  gpos_max(2078)  -197231.9     2532.8
+  CGOPT     993  6.864e+00  4      grvecs_rms  -197231.9     2535.4
+  CGOPT     994  4.219e+00  4  gpos_max(2119)  -197231.9     2538.0
+  CGOPT     995  7.767e+00  4      grvecs_rms  -197231.9     2540.6
+  CGOPT     996  6.200e+00  4  gpos_max(2119)  -197231.9     2543.2
+  CGOPT     997  7.160e+00  4      grvecs_rms  -197231.9     2545.8
+  CGOPT     998  6.439e+00  4      grvecs_rms  -197231.9     2548.4
+  CGOPT     999  5.264e+00  4  gpos_max(2119)  -197231.9     2551.0
+  CGOPT    1000  7.793e+00  4      grvecs_rms  -197231.9     2553.5
+  CGOPT    1001  7.256e+00  4      grvecs_rms  -197232.0     2556.1
+  CGOPT    1002  7.427e+00  4      grvecs_rms  -197232.0     2558.7
+  CGOPT    1003  6.925e+00  4      grvecs_rms  -197232.0     2561.3
+  CGOPT    1004  8.125e+00  4      grvecs_rms  -197232.0     2563.9
+  CGOPT    1005  6.309e+00  4      grvecs_rms  -197232.0     2566.4
+  CGOPT    1006  6.074e+00  4      grvecs_rms  -197232.0     2569.0
+  CGOPT    1007  6.545e+00  4      grvecs_rms  -197232.0     2571.6
+  CGOPT    1008  6.786e+00  4  gpos_max(2911)  -197232.0     2574.2
+  CGOPT    1009  6.934e+00  4      grvecs_rms  -197232.0     2576.8
+  CGOPT    1010  5.571e+00  4  gpos_max(2911)  -197232.0     2579.4
+  CGOPT    1011  5.874e+00  4      grvecs_rms  -197232.0     2582.0
+  CGOPT    1012  4.829e+00  4      grvecs_rms  -197232.0     2584.6
+  CGOPT    1013  5.716e+00  4      grvecs_rms  -197232.0     2587.2
+  CGOPT    1014  5.193e+00  4      grvecs_rms  -197232.0     2589.8
+  CGOPT    1015  5.805e+00  4      grvecs_rms  -197232.0     2592.4
+  CGOPT    1016  5.430e+00  4      grvecs_rms  -197232.0     2595.0
+  CGOPT    1017  6.114e+00  3  gpos_max(2911)  -197232.0     2597.6
+  CGOPT    1018  6.497e+00  4      grvecs_rms  -197232.0     2600.2
+  CGOPT    1019  4.980e+00  4  gpos_max(2911)  -197232.0     2602.8
+  CGOPT    1020  4.534e+00  4      grvecs_rms  -197232.0     2605.4
+  CGOPT    1021  4.358e+00  4  gpos_max(2911)  -197232.0     2608.0
+  CGOPT    1022  6.568e+00  4      grvecs_rms  -197232.0     2610.5
+  CGOPT    1023  3.876e+00  4      grvecs_rms  -197232.0     2613.1
+  CGOPT    1024  4.748e+00  4      grvecs_rms  -197232.0     2615.7
+  CGOPT    1025  4.688e+00  4      grvecs_rms  -197232.0     2618.3
+  CGOPT    1026  4.241e+00  4      grvecs_rms  -197232.0     2620.9
+  CGOPT    1027  3.790e+00  4      grvecs_rms  -197232.0     2623.4
+  CGOPT    1028  6.116e+00  4      grvecs_rms  -197232.0     2625.9
+  CGOPT    1029  7.156e+00  4      grvecs_rms  -197232.0     2628.5
+  CGOPT    1030  3.159e+00  4  gpos_max(2858)  -197232.0     2631.0
+  CGOPT    1031  7.436e+00  4      grvecs_rms  -197232.0     2633.6
+  CGOPT    1032  2.890e+00  4      grvecs_rms  -197232.0     2636.1
+  CGOPT    1033  7.260e+00  4      grvecs_rms  -197232.1     2638.7
+  CGOPT    1034  1.974e+00  3      grvecs_rms  -197232.1     2641.2
+  CGOPT    1035  5.884e+00  4      grvecs_rms  -197232.1     2643.8
+  CGOPT    1036  4.148e+00  4      grvecs_rms  -197232.1     2646.3
+  CGOPT    1037  5.867e+00  4      grvecs_rms  -197232.1     2648.8
+  CGOPT    1038  4.529e+00  4    gpos_max(10)  -197232.1     2651.4
+  CGOPT    1039  6.129e+00  4      grvecs_rms  -197232.1     2653.9
+  CGOPT    1040  4.739e+00  4      grvecs_rms  -197232.1     2656.4
+  CGOPT    1041  6.200e+00  4      grvecs_rms  -197232.1     2658.9
+  CGOPT    1042  6.058e+00  4      grvecs_rms  -197232.1     2661.4
+  CGOPT    1043  5.848e+00  4      grvecs_rms  -197232.1     2663.9
+  CGOPT    1044  6.576e+00  4      grvecs_rms  -197232.1     2666.4
+  CGOPT    1045  9.261e+00  4      grvecs_rms  -197232.1     2668.9
+  CGOPT    1046  7.145e+00  4      grvecs_rms  -197232.1     2671.4
+  CGOPT    1047  5.238e+00  4      grvecs_rms  -197232.1     2673.9
+  CGOPT    1048  6.476e+00  4      grvecs_rms  -197232.1     2676.4
+  CGOPT    1049  4.346e+00  4      grvecs_rms  -197232.1     2678.9
+  CGOPT    1050  4.640e+00  4      grvecs_rms  -197232.1     2681.4
+  CGOPT    1051  4.230e+00  4  gpos_max(2119)  -197232.1     2683.9
+  CGOPT    1052  4.685e+00  4      grvecs_rms  -197232.1     2686.4
+  CGOPT    1053  3.912e+00  4      grvecs_rms  -197232.1     2688.8
+  CGOPT    1054  6.515e+00  4      grvecs_rms  -197232.1     2691.3
+  CGOPT    1055  3.033e+00  3  gpos_max(2078)  -197232.1     2693.8
+  CGOPT    1056  6.630e+00  4      grvecs_rms  -197232.1     2696.3
+  CGOPT    1057  5.192e+00  4  gpos_max(2119)  -197232.1     2698.8
+  CGOPT    1058  5.349e+00  4  gpos_max(2119)  -197232.1     2701.3
+  CGOPT    1059  5.672e+00  4      grvecs_rms  -197232.1     2703.8
+  CGOPT    1060  5.783e+00  4      grvecs_rms  -197232.1     2706.3
+  CGOPT    1061  4.492e+00  4      grvecs_rms  -197232.1     2708.8
+  CGOPT    1062  3.995e+00  4      grvecs_rms  -197232.1     2711.3
+  CGOPT    1063  6.804e+00  4      grvecs_rms  -197232.1     2713.8
+  CGOPT    1064  4.179e+00  4      grvecs_rms  -197232.1     2716.3
+  CGOPT    1065  6.316e+00  4      grvecs_rms  -197232.1     2718.8
+  CGOPT    1066  4.215e+00  4      grvecs_rms  -197232.1     2721.3
+  CGOPT    1067  6.089e+00  4      grvecs_rms  -197232.1     2723.9
+  CGOPT    1068  3.708e+00  4      grvecs_rms  -197232.1     2726.5
+  CGOPT    1069  6.585e+00  4      grvecs_rms  -197232.1     2729.1
+  CGOPT    1070  6.888e+00  4      grvecs_rms  -197232.1     2731.6
+  CGOPT    1071  6.254e+00  4      grvecs_rms  -197232.1     2734.2
+  CGOPT    1072  6.761e+00  4      grvecs_rms  -197232.1     2736.8
+  CGOPT    1073  5.774e+00  4      grvecs_rms  -197232.1     2739.3
+  CGOPT    1074  5.056e+00  4      grvecs_rms  -197232.1     2741.9
+  CGOPT    1075  6.379e+00  4      grvecs_rms  -197232.1     2744.5
+  CGOPT    1076  3.298e+00  4      grvecs_rms  -197232.1     2747.1
+  CGOPT    1077  5.769e+00  4      grvecs_rms  -197232.1     2749.7
+  CGOPT    1078  6.061e+00  4      grvecs_rms  -197232.1     2752.3
+  CGOPT    1079  4.596e+00  4  gpos_max(2858)  -197232.2     2754.9
+  CGOPT    1080  4.499e+00  4      grvecs_rms  -197232.2     2757.5
+  CGOPT    1081  3.460e+00  4  gpos_max(2911)  -197232.2     2760.1
+  CGOPT    1082  5.289e+00  4      grvecs_rms  -197232.2     2762.6
+  CGOPT    1083  2.745e+00  4      grvecs_rms  -197232.2     2765.2
+  CGOPT    1084  6.712e+00  4      grvecs_rms  -197232.2     2767.8
+  CGOPT    1085  4.692e+00  4      grvecs_rms  -197232.2     2770.4
+  CGOPT    1086  4.980e+00  4      grvecs_rms  -197232.2     2773.0
+  CGOPT    1087  5.194e+00  4      grvecs_rms  -197232.2     2775.6
+  CGOPT    1088  3.601e+00  4      grvecs_rms  -197232.2     2778.2
+  CGOPT    1089  4.989e+00  4      grvecs_rms  -197232.2     2780.8
+  CGOPT    1090  4.079e+00  4  gpos_max(2911)  -197232.2     2783.4
+  CGOPT    1091  4.290e+00  4      grvecs_rms  -197232.2     2786.0
+  CGOPT    1092  4.119e+00  4      grvecs_rms  -197232.2     2788.6
+  CGOPT    1093  3.787e+00  4      grvecs_rms  -197232.2     2791.2
+  CGOPT    1094  3.254e+00  4      grvecs_rms  -197232.2     2793.8
+  CGOPT    1095  3.456e+00  4      grvecs_rms  -197232.2     2796.4
+  CGOPT    1096  1.969e+00  3  gpos_max(2911)  -197232.2     2799.0
+  CGOPT    1097  3.940e+00  4      grvecs_rms  -197232.2     2801.6
+  CGOPT    1098  3.513e+00  4      grvecs_rms  -197232.2     2804.2
+  CGOPT    1099  2.917e+00  4   gpos_max(135)  -197232.2     2806.8
+  CGOPT    1100  2.778e+00  4   gpos_max(135)  -197232.2     2809.4
+  CGOPT    1101  5.488e+00  4      grvecs_rms  -197232.2     2811.9
+  CGOPT    1102  2.454e+00  4      grvecs_rms  -197232.2     2814.5
+  CGOPT    1103  3.652e+00  4      grvecs_rms  -197232.2     2817.1
+  CGOPT    1104  3.552e+00  4      grvecs_rms  -197232.2     2819.7
+  CGOPT    1105  1.862e+00  3      grvecs_rms  -197232.2     2822.3
+  CGOPT    1106  4.111e+00  4      grvecs_rms  -197232.2     2824.9
+  CGOPT    1107  3.209e+00  4  gpos_max(2119)  -197232.2     2827.5
+  CGOPT    1108  4.210e+00  4      grvecs_rms  -197232.2     2830.1
+  CGOPT    1109  3.873e+00  4  gpos_max(2119)  -197232.2     2832.7
+  CGOPT    1110  4.133e+00  4      grvecs_rms  -197232.2     2835.3
+  CGOPT    1111  3.933e+00  4      grvecs_rms  -197232.2     2837.9
+  CGOPT    1112  5.675e+00  4      grvecs_rms  -197232.2     2840.5
+  CGOPT    1113  3.759e+00  4      grvecs_rms  -197232.2     2843.1
+  CGOPT    1114  3.130e+00  4      grvecs_rms  -197232.2     2845.7
+  CGOPT    1115  6.081e+00  4      grvecs_rms  -197232.2     2848.3
+  CGOPT    1116  3.092e+00  3  gpos_max(2119)  -197232.2     2850.9
+  CGOPT    1117  4.713e+00  4      grvecs_rms  -197232.2     2853.5
+  CGOPT    1118  4.523e+00  3  gpos_max(2119)  -197232.2     2856.2
+  CGOPT    1119  5.003e+00  4  gpos_max(2119)  -197232.2     2858.8
+  CGOPT    1120  4.893e+00  4  gpos_max(2119)  -197232.2     2861.4
+  CGOPT    1121  3.674e+00  4  gpos_max(2119)  -197232.2     2864.0
+  CGOPT    1122  3.035e+00  4  gpos_max(2119)  -197232.2     2866.6
+  CGOPT    1123  2.742e+00  3  gpos_max(2119)  -197232.2     2869.2
+  CGOPT    1124  3.163e+00  4      grvecs_rms  -197232.2     2871.8
+  CGOPT    1125  3.767e+00  4      grvecs_rms  -197232.2     2874.4
+  CGOPT    1126  5.045e+00  4      grvecs_rms  -197232.2     2877.0
+  CGOPT    1127  2.967e+00  3  gpos_max(2078)  -197232.2     2879.6
+  CGOPT    1128  4.411e+00  4      grvecs_rms  -197232.2     2882.2
+  CGOPT    1129  3.933e+00  4  gpos_max(2119)  -197232.2     2884.8
+  CGOPT    1130  3.714e+00  4      grvecs_rms  -197232.2     2887.4
+  CGOPT    1131  2.956e+00  4      grvecs_rms  -197232.2     2890.0
+  CGOPT    1132  3.252e+00  4  gpos_max(2119)  -197232.2     2892.5
+  CGOPT    1133  2.592e+00  4      grvecs_rms  -197232.2     2895.1
+  CGOPT    1134  4.071e+00  4      grvecs_rms  -197232.2     2897.6
+  CGOPT    1135  2.906e+00  4      grvecs_rms  -197232.2     2900.2
+  CGOPT    1136  2.316e+00  3      grvecs_rms  -197232.2     2902.7
+  CGOPT    1137  3.268e+00  4      grvecs_rms  -197232.2     2905.3
+  CGOPT    1138  3.048e+00  4      grvecs_rms  -197232.2     2907.9
+  CGOPT    1139  3.205e+00  4      grvecs_rms  -197232.2     2910.4
+  CGOPT    1140  3.863e+00  4      grvecs_rms  -197232.2     2913.0
+  CGOPT    1141  3.201e+00  4      grvecs_rms  -197232.2     2915.5
+  CGOPT    1142  2.559e+00  4      grvecs_rms  -197232.2     2918.1
+  CGOPT    1143  4.452e+00  4      grvecs_rms  -197232.2     2920.6
+  CGOPT    1144  1.976e+00  3  gpos_max(2911)  -197232.2     2923.2
+  CGOPT    1145  3.756e+00  4      grvecs_rms  -197232.3     2925.7
+  CGOPT    1146  2.445e+00  4      grvecs_rms  -197232.3     2928.2
+  CGOPT    1147  3.494e+00  4      grvecs_rms  -197232.3     2930.7
+  CGOPT    1148  3.621e+00  4      grvecs_rms  -197232.3     2933.2
+  CGOPT    1149  3.107e+00  4      grvecs_rms  -197232.3     2935.7
+  CGOPT    1150  3.185e+00  4      grvecs_rms  -197232.3     2938.2
+  CGOPT    1151  3.909e+00  4      grvecs_rms  -197232.3     2940.7
+  CGOPT    1152  4.314e+00  4      grvecs_rms  -197232.3     2943.2
+  CGOPT    1153  4.228e+00  4      grvecs_rms  -197232.3     2945.7
+  CGOPT    1154  4.428e+00  4      grvecs_rms  -197232.3     2948.2
+  CGOPT    1155  3.113e+00  4      grvecs_rms  -197232.3     2950.7
+  CGOPT    1156  3.265e+00  4      grvecs_rms  -197232.3     2953.2
+  CGOPT    1157  4.589e+00  4      grvecs_rms  -197232.3     2955.7
+  CGOPT    1158  2.931e+00  3  gpos_max(2911)  -197232.3     2958.2
+  CGOPT    1159  3.154e+00  4  gpos_max(2911)  -197232.3     2960.7
+  CGOPT    1160  3.051e+00  4  gpos_max(2858)  -197232.3     2963.2
+  CGOPT    1161  3.098e+00  3  gpos_max(2911)  -197232.3     2965.7
+  CGOPT    1162  2.409e+00  3  gpos_max(2911)  -197232.3     2968.2
+  CGOPT    1163  1.834e+00  3  gpos_max(2858)  -197232.3     2970.7
+  CGOPT    1164  1.966e+00  3      grvecs_rms  -197232.3     2973.2
+  CGOPT    1165  1.628e+00  3  gpos_max(2911)  -197232.3     2975.7
+  CGOPT    1166  3.170e+00  3      grvecs_rms  -197232.3     2978.2
+  CGOPT    1167  2.126e+00  3      grvecs_rms  -197232.3     2980.7
+  CGOPT    1168  3.992e+00  3      grvecs_rms  -197232.3     2983.2
+  CGOPT    1169  3.614e+00  4      grvecs_rms  -197232.3     2985.7
+  CGOPT    1170  2.267e+00  3  gpos_max(2858)  -197232.3     2988.2
+  CGOPT    1171  3.349e+00  3      grvecs_rms  -197232.3     2990.7
+  CGOPT    1172  2.894e+00  3      grvecs_rms  -197232.3     2993.2
+  CGOPT    1173  2.411e+00  3      grvecs_rms  -197232.3     2995.8
+  CGOPT    1174  2.427e+00  3      grvecs_rms  -197232.3     2998.4
+  CGOPT    1175  2.712e+00  2      grvecs_rms  -197232.3     3001.0
+  CGOPT    1176  2.805e+00  3      grvecs_rms  -197232.3     3003.6
+  CGOPT    1177  2.062e+00  3  gpos_max(2078)  -197232.3     3006.1
+  CGOPT    1178  2.855e+00  4  gpos_max(2119)  -197232.3     3008.7
+  CGOPT    1179  2.695e+00  2  gpos_max(2078)  -197232.3     3011.3
+  CGOPT    1180  2.854e+00  2  gpos_max(2078)  -197232.3     3013.9
+  CGOPT    1181  3.409e+00  3      grvecs_rms  -197232.3     3016.5
+  CGOPT    1182  2.609e+00  2  gpos_max(2119)  -197232.3     3019.1
+  CGOPT    1183  2.459e+00  3      grvecs_rms  -197232.3     3021.6
+  CGOPT    1184  1.883e+00  2      grvecs_rms  -197232.3     3024.2
+  CGOPT    1185  2.142e+00  3      grvecs_rms  -197232.3     3026.8
+  CGOPT    1186  1.938e+00  2  gpos_max(2078)  -197232.3     3029.4
+  CGOPT    1187  2.165e+00  3  gpos_max(2078)  -197232.3     3032.0
+  CGOPT    1188  3.154e+00  2  gpos_max(2119)  -197232.3     3034.6
+  CGOPT    1189  3.081e+00  2  gpos_max(2119)  -197232.3     3037.2
+  CGOPT    1190  2.976e+00  2  gpos_max(2078)  -197232.3     3039.8
+  CGOPT    1191  3.160e+00  3  gpos_max(2119)  -197232.3     3042.3
+  CGOPT    1192  2.228e+00  2  gpos_max(2119)  -197232.3     3044.9
+  CGOPT    1193  1.890e+00  2  gpos_max(2078)  -197232.3     3047.5
+  CGOPT    1194  2.900e+00  3      grvecs_rms  -197232.3     3050.0
+  CGOPT    1195  3.115e+00  3      grvecs_rms  -197232.3     3052.6
+  CGOPT    1196  3.779e+00  3      grvecs_rms  -197232.3     3055.2
+  CGOPT    1197  2.161e+00  2      grvecs_rms  -197232.3     3057.8
+  CGOPT    1198  3.429e+00  3      grvecs_rms  -197232.3     3060.4
+  CGOPT    1199  2.500e+00  2      grvecs_rms  -197232.3     3063.0
+  CGOPT    1200  2.189e+00  2  gpos_max(2078)  -197232.3     3065.5
+  CGOPT    1201  2.382e+00  2  gpos_max(2119)  -197232.3     3068.1
+  CGOPT    1202  2.932e+00  3      grvecs_rms  -197232.3     3070.7
+  CGOPT    1203  1.706e+00  2  gpos_max(2119)  -197232.3     3073.3
+  CGOPT    1204  2.511e+00  3      grvecs_rms  -197232.3     3075.8
+  CGOPT    1205  1.779e+00  2      grvecs_rms  -197232.3     3078.3
+  CGOPT    1206  1.595e+00  1      grvecs_rms  -197232.3     3080.9
+  CGOPT    1207  1.632e+00  2      grvecs_rms  -197232.3     3083.5
+  CGOPT    1208  1.374e+00  1  gpos_max(2847)  -197232.3     3086.1
+  CGOPT    1209  3.090e+00  3      grvecs_rms  -197232.3     3088.7
+  CGOPT    1210  1.860e+00  2   gpos_max(135)  -197232.3     3091.3
+  CGOPT    1211  2.627e+00  3      grvecs_rms  -197232.3     3093.8
+  CGOPT    1212  1.356e+00  2      grvecs_rms  -197232.3     3096.4
+  CGOPT    1213  3.480e+00  3      grvecs_rms  -197232.3     3099.0
+  CGOPT    1214  2.725e+00  3      grvecs_rms  -197232.3     3101.6
+  CGOPT    1215  2.288e+00  3      grvecs_rms  -197232.3     3104.2
+  CGOPT    1216  2.244e+00  2      grvecs_rms  -197232.3     3106.8
+  CGOPT    1217  1.525e+00  2  gpos_max(2911)  -197232.3     3109.4
+  CGOPT    1218  2.641e+00  3      grvecs_rms  -197232.3     3111.9
+  CGOPT    1219  1.886e+00  2  gpos_max(2911)  -197232.3     3114.5
+  CGOPT    1220  2.673e+00  3      grvecs_rms  -197232.3     3117.1
+  CGOPT    1221  2.110e+00  2  gpos_max(2911)  -197232.3     3119.7
+  CGOPT    1222  3.330e+00  3      grvecs_rms  -197232.3     3122.3
+  CGOPT    1223  2.736e+00  3      grvecs_rms  -197232.3     3124.9
+  CGOPT    1224  2.643e+00  3      grvecs_rms  -197232.3     3127.4
+  CGOPT    1225  2.143e+00  3      grvecs_rms  -197232.3     3130.0
+  CGOPT    1226  1.340e+00  2  gpos_max(2858)  -197232.3     3132.6
+  CGOPT    1227  2.058e+00  2      grvecs_rms  -197232.3     3135.2
+  CGOPT    1228  2.840e+00  3      grvecs_rms  -197232.3     3137.8
+  CGOPT    1229  2.280e+00  1  gpos_max(2858)  -197232.3     3140.3
+  CGOPT    1230  2.977e+00  3  gpos_max(2911)  -197232.3     3142.9
+  CGOPT    1231  2.510e+00  2  gpos_max(2911)  -197232.3     3145.4
+  CGOPT    1232  2.232e+00  3      grvecs_rms  -197232.3     3147.9
+  CGOPT    1233  1.779e+00  1  gpos_max(2911)  -197232.3     3150.5
+  CGOPT    1234  2.088e+00  3      grvecs_rms  -197232.3     3153.0
+  CGOPT    1235  1.693e+00  2      grvecs_rms  -197232.3     3155.6
+  CGOPT    1236  2.463e+00  2      grvecs_rms  -197232.3     3158.1
+  CGOPT    1237  2.770e+00  3      grvecs_rms  -197232.3     3160.7
+  CGOPT    1238  1.913e+00  2      grvecs_rms  -197232.3     3163.2
+  CGOPT    1239  1.986e+00  2      grvecs_rms  -197232.3     3165.7
+  CGOPT    1240  2.105e+00  2      grvecs_rms  -197232.3     3168.3
+  CGOPT    1241  1.953e+00  2  gpos_max(2911)  -197232.3     3170.8
+  CGOPT    1242  1.823e+00  2      grvecs_rms  -197232.3     3173.4
+  CGOPT    1243  1.638e+00  2  gpos_max(2911)  -197232.3     3175.9
+  CGOPT    1244  1.973e+00  2      grvecs_rms  -197232.3     3178.4
+  CGOPT    1245  2.329e+00  2      grvecs_rms  -197232.3     3180.8
+  CGOPT    1246  1.379e+00  2      grvecs_rms  -197232.3     3183.3
+  CGOPT    1247  1.846e+00  2      grvecs_rms  -197232.3     3185.8
+  CGOPT    1248  1.421e+00  2      grvecs_rms  -197232.3     3188.3
+  CGOPT    1249  1.777e+00  2  gpos_max(2119)  -197232.3     3190.8
+  CGOPT    1250  2.283e+00  3  gpos_max(2119)  -197232.3     3193.3
+  CGOPT    1251  2.440e+00  3      grvecs_rms  -197232.3     3195.8
+  CGOPT    1252  1.780e+00  2  gpos_max(2119)  -197232.3     3198.3
+  CGOPT    1253  1.569e+00  2  gpos_max(2119)  -197232.3     3200.8
+  CGOPT    1254  2.647e+00  3      grvecs_rms  -197232.3     3203.2
+  CGOPT    1255  1.364e+00  2      grvecs_rms  -197232.3     3205.7
+  CGOPT    1256  2.321e+00  3      grvecs_rms  -197232.3     3208.2
+  CGOPT    1257  1.830e+00  2      grvecs_rms  -197232.3     3210.7
+  CGOPT    1258  1.518e+00  2      grvecs_rms  -197232.3     3213.2
+  CGOPT    1259  1.918e+00  2  gpos_max(2119)  -197232.3     3215.7
+  CGOPT    1260  1.834e+00  2      grvecs_rms  -197232.3     3218.3
+  CGOPT    1261  2.516e+00  3      grvecs_rms  -197232.3     3220.8
+  CGOPT    1262  2.062e+00  2      grvecs_rms  -197232.3     3223.4
+  CGOPT    1263  2.245e+00  2      grvecs_rms  -197232.3     3225.9
+  CGOPT    1264  1.530e+00  2      grvecs_rms  -197232.3     3228.5
+  CGOPT    1265  3.077e+00  3      grvecs_rms  -197232.3     3231.1
+  CGOPT    1266  1.319e+00  1      grvecs_rms  -197232.3     3233.6
+  CGOPT    1267  1.666e+00  1      grvecs_rms  -197232.3     3236.2
+  CGOPT    1268  1.800e+00  1      grvecs_rms  -197232.3     3238.7
+  CGOPT    1269  2.036e+00  3      grvecs_rms  -197232.3     3241.3
+  CGOPT    1270  2.001e+00  3      grvecs_rms  -197232.3     3243.9
+  CGOPT    1271  1.724e+00  1   gpos_max(135)  -197232.3     3246.4
+  CGOPT    1272  2.725e+00  3      grvecs_rms  -197232.3     3249.0
+  CGOPT    1273  1.404e+00  1   gpos_max(135)  -197232.3     3251.6
+  CGOPT    1274  2.330e+00  2      grvecs_rms  -197232.3     3254.1
+  CGOPT    1275  1.698e+00  1      grvecs_rms  -197232.3     3256.7
+  CGOPT    1276  3.401e+00  2      grvecs_rms  -197232.3     3259.3
+  CGOPT    1277  1.329e+00  1      grvecs_rms  -197232.3     3261.9
+  CGOPT    1278  3.428e+00  2      grvecs_rms  -197232.3     3264.4
+  CGOPT    1279  2.130e+00  2      grvecs_rms  -197232.3     3266.9
+  CGOPT    1280  3.318e+00  3      grvecs_rms  -197232.3     3269.5
+  CGOPT    1281  1.401e+00  2      grvecs_rms  -197232.3     3272.0
+  CGOPT    1282  2.381e+00  3      grvecs_rms  -197232.3     3274.5
+  CGOPT    1283  1.723e+00  2      grvecs_rms  -197232.3     3277.0
+  CGOPT    1284  2.962e+00  2      grvecs_rms  -197232.3     3279.6
+  CGOPT    1285  2.128e+00  2      grvecs_rms  -197232.3     3282.1
+  CGOPT    1286  2.121e+00  2      grvecs_rms  -197232.3     3284.6
+  CGOPT    1287  2.374e+00  3      grvecs_rms  -197232.3     3287.1
+  CGOPT    1288  1.893e+00  2      grvecs_rms  -197232.3     3289.6
+  CGOPT    1289  1.704e+00  2      grvecs_rms  -197232.3     3292.2
+  CGOPT    1290  1.984e+00  2      grvecs_rms  -197232.3     3294.7
+  CGOPT    1291  2.448e+00  3      grvecs_rms  -197232.3     3297.2
+  CGOPT    1292  2.313e+00  3      grvecs_rms  -197232.3     3299.7
+  CGOPT    1293  3.134e+00  3      grvecs_rms  -197232.3     3302.2
+  CGOPT    1294  1.456e+00  2  gpos_max(2911)  -197232.3     3304.7
+  CGOPT    1295  2.507e+00  3      grvecs_rms  -197232.3     3307.2
+  CGOPT    1296  1.279e+00  2      grvecs_rms  -197232.3     3309.7
+  CGOPT    1297  2.254e+00  3      grvecs_rms  -197232.3     3312.2
+  CGOPT    1298  1.731e+00  2      grvecs_rms  -197232.3     3314.7
+  CGOPT    1299  2.689e+00  3      grvecs_rms  -197232.3     3317.2
+  CGOPT    1300  2.046e+00  2  gpos_max(2858)  -197232.3     3319.7
+  CGOPT    1301  2.969e+00  3      grvecs_rms  -197232.3     3322.1
+  CGOPT    1302  2.217e+00  2  gpos_max(2911)  -197232.3     3324.6
+  CGOPT    1303  2.494e+00  3      grvecs_rms  -197232.3     3327.1
+  CGOPT    1304  1.797e+00  2      grvecs_rms  -197232.3     3329.6
+  CGOPT    1305  1.873e+00  2      grvecs_rms  -197232.3     3332.1
+  CGOPT    1306  2.138e+00  3      grvecs_rms  -197232.3     3334.6
+  CGOPT    1307  2.668e+00  2      grvecs_rms  -197232.3     3337.2
+  CGOPT    1308  2.115e+00  2      grvecs_rms  -197232.3     3339.8
+  CGOPT    1309  1.251e+00  2      grvecs_rms  -197232.3     3342.3
+  CGOPT    1310  2.444e+00  3      grvecs_rms  -197232.3     3344.9
+  CGOPT    1311  1.900e+00  2  gpos_max(2911)  -197232.3     3347.4
+  CGOPT    1312  1.939e+00  2  gpos_max(2911)  -197232.3     3350.0
+  CGOPT    1313  1.583e+00  1  gpos_max(2858)  -197232.3     3352.6
+  CGOPT    1314  1.325e+00  2  gpos_max(2911)  -197232.3     3355.1
+  CGOPT    1315  1.326e+00  2      grvecs_rms  -197232.3     3357.7
+  CGOPT    1316  1.406e+00  1      grvecs_rms  -197232.3     3360.3
+  CGOPT    1317  1.950e+00  1      grvecs_rms  -197232.3     3362.8
+  CGOPT    1318  1.250e+00  1      grvecs_rms  -197232.3     3365.4
+  CGOPT    1319  2.331e+00  1      grvecs_rms  -197232.3     3368.0
+  CGOPT    1320  1.372e+00  2      grvecs_rms  -197232.3     3370.6
+  CGOPT    1321  1.853e+00  2      grvecs_rms  -197232.3     3373.2
+  CGOPT    1322  1.355e+00  2      grvecs_rms  -197232.3     3375.8
+  CGOPT    1323  1.027e+00  1      grvecs_rms  -197232.3     3378.3
+  CGOPT    1324  1.557e+00  1      grvecs_rms  -197232.3     3380.9
+  CGOPT    1325  1.434e+00  1      grvecs_rms  -197232.3     3383.4
+  CGOPT    1326  1.750e+00  1      grvecs_rms  -197232.3     3386.0
+  CGOPT    1327  1.100e+00  1      grvecs_rms  -197232.3     3388.6
+  CGOPT    1328  2.299e+00  1      grvecs_rms  -197232.3     3391.2
+  CGOPT    1329  1.143e+00  1      grvecs_rms  -197232.3     3393.8
+  CGOPT    1330  1.117e+00  1      grvecs_rms  -197232.3     3396.3
+  CGOPT    1331  1.119e+00  2      grvecs_rms  -197232.3     3398.8
+  CGOPT    1332  1.674e+00  2      grvecs_rms  -197232.3     3401.4
+  CGOPT    1333  9.433e-01  0    gpos_max(95)  -197232.3     3404.0
+  CGOPT  
+  CGOPT Final Unit Cell:
+  CGOPT ----------------
+  CGOPT - cell vectors:
+  CGOPT     a =    45.7282    -0.0011    -0.1108
+  CGOPT     b =   -22.8623    39.5965     0.1708
+  CGOPT     c =    -0.2470     0.1862    38.2303
+  CGOPT  
+  CGOPT - lengths, angles and volume:
+  CGOPT     |a|  =    45.7283
+  CGOPT     |b|  =    45.7231
+  CGOPT     |c|  =    38.2315
+  CGOPT     alpha =   89.35931
+  CGOPT      beta =   90.50888
+  CGOPT     gamma =  120.00303
+  CGOPT     volume =  69219.612
+  CGOPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ENV User:           vsc42354
+    ENV Platform:       Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-redhat-8.
+    ENV                 8-Ootpa
+    ENV Time:           2024-03-14T11:55:59.073122
+    ENV Python version: 3.7.4 (default, Sep 11 2020, 18:31:13) [GCC 8.3.0]
+    ENV YAFF version:   1.6.0
+    ENV Current Dir:    /kyukon/data/gent/vo/000/gvo00003/vsc42354/PhD/Projects/
+    ENV                 GeometryConstructions/Rasha/Output/PA_TP/Inclination/out
+    ENV                 put/12layers/ABCDEF_full19
+    ENV Command line:   opt.py
+
+  TIMER Overview of CPU time usage.
+  TIMER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  TIMER Label             Total      Own
+  TIMER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  TIMER CGOPT            3380.0      8.3                                        
+  TIMER CGOPT hooks         0.1      0.1                                        
+  TIMER Ewald corr.         0.3      0.2                                        
+  TIMER Ewald neut.         0.3      0.2                                        
+  TIMER Ewald reci.       749.1    749.1 WWWWWWWWWWWWWWWWWWWWW                  
+  TIMER Generator           4.0      4.0                                        
+  TIMER Nlists           1343.0   1342.9 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+  TIMER PP ei             890.7    890.7 WWWWWWWWWWWWWWWWWWWWWWWWW              
+  TIMER PP mm3            374.6    374.5 WWWWWWWWWW                             
+  TIMER Total            3384.6      0.6                                        
+  TIMER Valence            13.7     13.6                                        
+  TIMER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+__/\\\__________________________________________________________________/\\\____
+  \ \\\                                                                 \ \\\
+   \ \\\      End of file. Thanks for using Yaff! Come back soon!!       \ \\\
+____\///__________________________________________________________________\///__
+
